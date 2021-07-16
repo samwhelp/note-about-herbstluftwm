@@ -1,4 +1,0 @@
-
-[ $(pkill polybar) ];
-
-echo $?
