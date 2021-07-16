@@ -15,34 +15,27 @@ source "$THE_BASE_DIR_PATH/init.sh"
 
 
 ################################################################################
+### Head: Model / Prepare / Ubuntu
+##
+
+mod_ubuntu_prepare () {
+
+	echo 'sudo apt-get install herbstluftwm'
+	sudo apt-get install herbstluftwm
+
+}
+
+##
+### Tail: Model / Prepare / Ubuntu
+################################################################################
+
+
+################################################################################
 ### Head: Main
 ##
 
 __main__ () {
-
-cat << EOF
-
-Usage:
-
-	$ make [action]
-
-Example:
-
-	$ make
-	$ make help
-
-	$ make install
-	$ make remove
-
-
-	$ make manjaro-prepare
-	$ make ubuntu-prepare
-
-Debug:
-	$ export DEBUG_HLWM=true
-
-EOF
-
+	mod_ubuntu_prepare "$@"
 }
 
 __main__ "$@"

@@ -15,34 +15,27 @@ source "$THE_BASE_DIR_PATH/init.sh"
 
 
 ################################################################################
+### Head: Model / Prepare / Manjaro
+##
+
+mod_manjaro_prepare () {
+
+	echo 'pamac install herbstluftwm'
+	pamac install herbstluftwm
+
+}
+
+##
+### Tail: Model / Prepare / Manjaro
+################################################################################
+
+
+################################################################################
 ### Head: Main
 ##
 
 __main__ () {
-
-cat << EOF
-
-Usage:
-
-	$ make [action]
-
-Example:
-
-	$ make
-	$ make help
-
-	$ make install
-	$ make remove
-
-
-	$ make manjaro-prepare
-	$ make ubuntu-prepare
-
-Debug:
-	$ export DEBUG_HLWM=true
-
-EOF
-
+	mod_manjaro_prepare "$@"
 }
 
 __main__ "$@"
