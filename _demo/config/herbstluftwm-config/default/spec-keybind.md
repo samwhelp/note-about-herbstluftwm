@@ -1,2 +1,2 @@
 
-# herbstluftwm / Keybind
+# Herbstluftwm / Keybind
