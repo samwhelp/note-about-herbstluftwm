@@ -38,8 +38,6 @@ app_polybar_start () {
 		return
 	fi
 
-	## is_command_exist 'polybar' && polybar main -c ~/.config/i3/polybar/config.ini &
-
 	is_command_exist 'polybar' && polybar top &
 
 }
