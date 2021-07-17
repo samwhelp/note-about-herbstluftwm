@@ -25,6 +25,8 @@ mod_install () {
 
 	mod_install_sys_ext
 
+	mod_install_sys_profile_default
+
 	mod_install_check
 
 }
@@ -73,6 +75,23 @@ mod_install_sys_ext () {
 
 	echo "install -Dm644 $THE_SYS_EXT_DIR_PATH/skel.sh $HOME/.config/herbstluftwm/sys/ext/skel.sh"
 	install -Dm644 "$THE_SYS_EXT_DIR_PATH/skel.sh" "$HOME/.config/herbstluftwm/sys/ext/skel.sh"
+
+	echo "install -Dm644 $THE_SYS_EXT_DIR_PATH/default.sh $HOME/.config/herbstluftwm/sys/ext/default.sh"
+	install -Dm644 "$THE_SYS_EXT_DIR_PATH/default.sh" "$HOME/.config/herbstluftwm/sys/ext/default.sh"
+
+}
+
+
+mod_install_sys_profile_default () {
+
+	echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/default/keybind.sh $HOME/.config/herbstluftwm/sys/profile/default/keybind.sh"
+	install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/default/keybind.sh" "$HOME/.config/herbstluftwm/sys/profile/default/keybind.sh"
+
+	echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/default/theme.sh $HOME/.config/herbstluftwm/sys/profile/default/theme.sh"
+	install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/default/theme.sh" "$HOME/.config/herbstluftwm/sys/profile/default/theme.sh"
+
+	echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/default/rule.sh $HOME/.config/herbstluftwm/sys/profile/default/rule.sh"
+	install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/default/rule.sh" "$HOME/.config/herbstluftwm/sys/profile/default/rule.sh"
 
 }
 
