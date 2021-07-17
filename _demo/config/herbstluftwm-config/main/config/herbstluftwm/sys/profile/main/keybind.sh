@@ -6,110 +6,88 @@
 
 skel_keybind () {
 
+	main_keybind_system
+	main_mousebind_system
+
 	main_keybind_application_terminal
 	main_keybind_application_rofi
 	main_keybind_application_favorite
+
+	main_keybind_tag
+
+	main_keybind_frame
+
+	main_keybind_window_focus
+	main_keybind_window_move
+	main_keybind_window_resize
+
+	main_keybind_window_close
+	main_keybind_window_fullscreen
+	main_keybind_window_floating
+	main_keybind_window_minimize
+	main_keybind_window_pseudotile
+
+	main_keybind_volume
 
 	main_keybind_misc
 }
 
 main_keybind_misc () {
-	hc keybind $Mod-Shift-q quit
-	hc keybind $Mod-Shift-r reload
-	hc keybind $Mod-Shift-c close
 
 
 
-	# basic movement in tiling and floating mode
-	# focusing clients
-	hc keybind $Mod-Left  focus left
-	hc keybind $Mod-Down  focus down
-	hc keybind $Mod-Up    focus up
-	hc keybind $Mod-Right focus right
-	hc keybind $Mod-h     focus left
-	hc keybind $Mod-j     focus down
-	hc keybind $Mod-k     focus up
-	hc keybind $Mod-l     focus right
-
-	# moving clients in tiling and floating mode
-	hc keybind $Mod-Shift-Left  shift left
-	hc keybind $Mod-Shift-Down  shift down
-	hc keybind $Mod-Shift-Up    shift up
-	hc keybind $Mod-Shift-Right shift right
-	hc keybind $Mod-Shift-h     shift left
-	hc keybind $Mod-Shift-j     shift down
-	hc keybind $Mod-Shift-k     shift up
-	hc keybind $Mod-Shift-l     shift right
-
-	# splitting frames
-	# create an empty frame at the specified direction
-	hc keybind $Mod-u       split   bottom  0.5
-	hc keybind $Mod-o       split   right   0.5
-	# let the current frame explode into subframes
-	hc keybind $Mod-Control-space split explode
-
-	# resizing frames and floating clients
-	resizestep=0.02
-	hc keybind $Mod-Control-h       resize left +$resizestep
-	hc keybind $Mod-Control-j       resize down +$resizestep
-	hc keybind $Mod-Control-k       resize up +$resizestep
-	hc keybind $Mod-Control-l       resize right +$resizestep
-	hc keybind $Mod-Control-Left    resize left +$resizestep
-	hc keybind $Mod-Control-Down    resize down +$resizestep
-	hc keybind $Mod-Control-Up      resize up +$resizestep
-	hc keybind $Mod-Control-Right   resize right +$resizestep
-
-	# tags
-	tag_names=( {1..9} )
-	tag_keys=( {1..9} 0 )
-
-	hc rename default "${tag_names[0]}" || true
-	for i in "${!tag_names[@]}" ; do
-	    hc add "${tag_names[$i]}"
-	    key="${tag_keys[$i]}"
-	    if ! [ -z "$key" ] ; then
-	        hc keybind "$Mod-$key" use_index "$i"
-	        hc keybind "$Mod-Shift-$key" move_index "$i"
-	    fi
-	done
-
-	# cycle through tags
-	hc keybind $Mod-period use_index +1 --skip-visible
-	hc keybind $Mod-comma  use_index -1 --skip-visible
-
-	# layouting
-	hc keybind $Mod-r remove
-	hc keybind $Mod-s floating toggle
-	hc keybind $Mod-f fullscreen toggle
-	hc keybind $Mod-Shift-f set_attr clients.focus.floating toggle
-	hc keybind $Mod-Shift-m set_attr clients.focus.minimized true
-	hc keybind $Mod-Control-m jumpto last-minimized
-	hc keybind $Mod-p pseudotile toggle
 	# The following cycles through the available layouts within a frame, but skips
 	# layouts, if the layout change wouldn't affect the actual window positions.
 	# I.e. if there are two windows within a frame, the grid layout is skipped.
-	hc keybind $Mod-space                                                           \
-	            or , and . compare tags.focus.curframe_wcount = 2                   \
-	                     . cycle_layout +1 vertical horizontal max vertical grid    \
-	               , cycle_layout +1
+		hc keybind Mod1-space															\
+				or , and . compare tags.focus.curframe_wcount = 2						\
+						 . cycle_layout +1 vertical horizontal max vertical grid		\
+						 , cycle_layout +1
 
-	# mouse
-	hc mouseunbind --all
-	hc mousebind $Mod-Button1 move
-	hc mousebind $Mod-Button2 zoom
-	hc mousebind $Mod-Button3 resize
 
-	# focus
-	hc keybind $Mod-BackSpace   cycle_monitor
-	hc keybind $Mod-Tab         cycle_all +1
-	hc keybind $Mod-Shift-Tab   cycle_all -1
-	hc keybind $Mod-c cycle
-	hc keybind $Mod-i jumpto urgent
+
+
 
 }
 
 ##
 ### Tail: Skel / Keybind
+################################################################################
+
+
+################################################################################
+### Head: Main / Keybind / System
+##
+
+main_keybind_system () {
+
+	hc keybind Mod1-Shift-z systemctl poweroff
+	hc keybind Mod1-Shift-x quit
+	hc keybind Mod1-Shift-c reload
+
+}
+
+##
+### Tail: Main / Keybind / System
+################################################################################
+
+
+################################################################################
+### Head: Main / Mousebind / System
+##
+
+main_mousebind_system () {
+
+	# mouse
+	hc mouseunbind --all
+	hc mousebind Mod1-Button1 move
+	hc mousebind Mod1-Button2 zoom
+	hc mousebind Mod1-Button3 resize
+
+}
+
+##
+### Tail: Main / Mousebind / System
 ################################################################################
 
 
@@ -120,11 +98,11 @@ main_keybind_misc () {
 main_keybind_application_terminal () {
 
 	# app / terminal
-	hc keybind $Mod-Return spawn "${TERMINAL:-sakura}" # use your $TERMINAL with xterm as fallback
-	hc keybind $Mod-Shift-a spawn sakura
-	hc keybind $Mod-Control-a spawn xfce4-terminal
-	hc keybind $Mod-Shift-t spawn xterm
-	hc keybind $Mod-Control-t spawn urxvt
+	hc keybind Mod1-Return spawn "${TERMINAL:-sakura}" # use your $TERMINAL with xterm as fallback
+	hc keybind Mod1-Shift-a spawn sakura
+	hc keybind Mod1-Control-a spawn xfce4-terminal
+	hc keybind Mod1-Shift-t spawn xterm
+	hc keybind Mod1-Control-t spawn urxvt
 
 }
 
@@ -140,9 +118,9 @@ main_keybind_application_terminal () {
 main_keybind_application_rofi () {
 
 	# app / rofi
-	#hc keybind $Mod-Shift-r spawn rofi -show run
-	hc keybind $Mod-Shift-w spawn rofi rofi -show window -show-icons
-	hc keybind $Mod-Shift-d spawn rofi rofi -show drun -show-icons
+	hc keybind Mod1-Shift-r spawn rofi -show run
+	hc keybind Mod1-Shift-w spawn rofi rofi -show window -show-icons
+	hc keybind Mod1-Shift-d spawn rofi rofi -show drun -show-icons
 
 }
 
@@ -158,13 +136,259 @@ main_keybind_application_rofi () {
 main_keybind_application_favorite () {
 
 	# app / favorite
-	#hc keybind $Mod-Shift-f spawn pcmanfm-qt
-	hc keybind $Mod-Shift-g spawn pcmanfm-qt
-	hc keybind $Mod-Shift-b spawn firefox
-	hc keybind $Mod-Shift-e spawn mousepad
+	#hc keybind Mod1-Shift-f spawn pcmanfm-qt
+	hc keybind Mod1-Shift-g spawn pcmanfm-qt
+	hc keybind Mod1-Shift-b spawn firefox
+	hc keybind Mod1-Shift-e spawn mousepad
 
 }
 
 ##
 ### Tail: Main / Keybind / Terminal / Favorit
+################################################################################
+
+
+################################################################################
+### Head: Main / Keybind / Frame
+##
+
+main_keybind_frame () {
+
+	# splitting frames
+	# create an empty frame at the specified direction
+	hc keybind Mod4-u	   split   bottom  0.5
+	hc keybind Mod4-o	   split   right   0.5
+	# let the current frame explode into subframes
+	hc keybind Mod1-Control-space split explode
+
+
+	hc keybind Mod4-i remove
+}
+
+##
+### Tail: Main / Keybind / Frame
+################################################################################
+
+
+################################################################################
+### Head: Main / Keybind / Tag
+##
+
+main_keybind_tag () {
+
+	# tags
+	#tag_names=( {1..9} )
+	#tag_keys=( {1..9} 0 )
+
+	tag_names=( {1..5} )
+	tag_keys=( {1..5} 0 )
+
+	hc rename default "${tag_names[0]}" || true
+	for i in "${!tag_names[@]}" ; do
+		hc add "${tag_names[$i]}"
+		key="${tag_keys[$i]}"
+		if ! [ -z "$key" ] ; then
+			hc keybind "Mod1-$key" use_index "$i"
+			hc keybind "Mod1-Shift-$key" move_index "$i"
+			hc keybind "Mod4-$key" move_index "$i"
+		fi
+	done
+
+	# cycle through tags
+	#hc keybind Mod1-comma  use_index -1 --skip-visible
+	#hc keybind Mod1-period use_index +1 --skip-visible
+
+
+	hc keybind Mod1-a  use_index -1 --skip-visible
+	hc keybind Mod1-s use_index +1 --skip-visible
+
+	hc keybind Mod1-h  use_index -1 --skip-visible
+	hc keybind Mod1-l use_index +1 --skip-visible
+
+}
+
+##
+### Tail: Main / Keybind / Tag
+################################################################################
+
+
+
+################################################################################
+### Head: Main / Keybind / Window / Focus
+##
+
+main_keybind_window_focus () {
+
+	# focusing clients
+	hc keybind Mod4-Left  focus left
+	hc keybind Mod4-Down  focus down
+	hc keybind Mod4-Up	focus up
+	hc keybind Mod4-Right focus right
+	hc keybind Mod4-h	 focus left
+	hc keybind Mod4-j	 focus down
+	hc keybind Mod4-k	 focus up
+	hc keybind Mod4-l	 focus right
+
+
+
+	# focus
+	hc keybind Mod4-Shift-Tab cycle_all -1
+	hc keybind Mod4-Tab cycle_all +1
+
+	hc keybind Mod4-a cycle_all -1
+	hc keybind Mod4-s cycle_all +1
+
+
+	hc keybind Mod4-grave cycle
+	hc keybind Mod4-y jumpto urgent
+
+	hc keybind Mod1-BackSpace   cycle_monitor
+}
+
+##
+### Tail: Main / Keybind / Window / Focus
+################################################################################
+
+
+################################################################################
+### Head: Main / Keybind / Window / Move
+##
+
+main_keybind_window_move () {
+
+	# moving clients in tiling and floating mode
+	hc keybind Mod4-Shift-Left  shift left
+	hc keybind Mod4-Shift-Down  shift down
+	hc keybind Mod4-Shift-Up	shift up
+	hc keybind Mod4-Shift-Right shift right
+	hc keybind Mod4-Shift-h	 shift left
+	hc keybind Mod4-Shift-j	 shift down
+	hc keybind Mod4-Shift-k	 shift up
+	hc keybind Mod4-Shift-l	 shift right
+
+}
+
+##
+### Tail: Main / Keybind / Window / Move
+################################################################################
+
+
+
+################################################################################
+### Head: Main / Keybind / Window / Resize
+##
+
+main_keybind_window_resize () {
+
+
+	# resizing frames and floating clients
+	local resize_step=0.02
+	hc keybind Mod4-Control-h	   resize left +$resize_step
+	hc keybind Mod4-Control-j	   resize down +$resize_step
+	hc keybind Mod4-Control-k	   resize up +$resize_step
+	hc keybind Mod4-Control-l	   resize right +$resize_step
+	hc keybind Mod4-Control-Left	resize left +$resize_step
+	hc keybind Mod4-Control-Down	resize down +$resize_step
+	hc keybind Mod4-Control-Up	  resize up +$resize_step
+	hc keybind Mod4-Control-Right   resize right +$resize_step
+
+}
+
+##
+### Tail: Main / Keybind / Window / Resize
+################################################################################
+
+
+################################################################################
+### Head: Main / Keybind / Window / Close
+##
+
+main_keybind_window_close () {
+
+	hc keybind Mod4-q close
+
+}
+
+##
+### Tail: Main / Keybind / Window / Close
+################################################################################
+
+
+################################################################################
+### Head: Main / Keybind / Window / Fullscreen
+##
+
+main_keybind_window_fullscreen () {
+
+	hc keybind Mod4-f fullscreen toggle
+
+}
+
+##
+### Tail: Main / Keybind / Window / Fullscreen
+################################################################################
+
+
+################################################################################
+### Head: Main / Keybind / Window / Floating
+##
+
+main_keybind_window_floating () {
+
+	hc keybind Mod4-n floating toggle
+
+	hc keybind Mod4-Shift-n set_attr clients.focus.floating toggle
+
+}
+
+##
+### Tail: Main / Keybind / Window / Floating
+################################################################################
+
+
+################################################################################
+### Head: Main / Keybind / Window / Minimize
+##
+
+main_keybind_window_minimize () {
+
+	hc keybind Mod4-b set_attr clients.focus.minimized true
+	hc keybind Mod4-v jumpto last-minimized
+
+}
+
+##
+### Tail: Main / Keybind / Window / Minimize
+################################################################################
+
+
+################################################################################
+### Head: Main / Keybind / Window / PseudoTile
+##
+
+main_keybind_window_pseudotile () {
+
+	hc keybind Mod4-p pseudotile toggle
+
+}
+
+##
+### Tail: Main / Keybind / Window / PseudoTile
+################################################################################
+
+
+
+################################################################################
+### Head: Main / Keybind / Volume
+##
+
+main_keybind_volume () {
+
+
+	return 0
+
+}
+
+##
+### Tail: Main / Keybind / Volume
 ################################################################################
