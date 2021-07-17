@@ -403,8 +403,59 @@ main_keybind_window_titletoggle () {
 
 main_keybind_volume () {
 
+	hc keybind Mod1-Shift-v spawn mate-volume-control
 
-	return 0
+
+	hc keybind Mod1-m spawn
+
+	## VolumeToggleMute
+	## Alt + m
+	hc keybind Mod1-m spawn amixer -q -D pulse sset Master toggle
+
+
+	## VolumeDecrease
+	## Alt + Shift + ,  (<)
+	hc keybind Mod1-Shift-comma spawn amixer -q -D pulse sset Master 5%- unmute
+
+
+	## VolumeIncrease
+	## Alt + Shift + .  (>)
+	hc keybind Mod1-Shift-period spawn amixer -q -D pulse sset Master 5%+ unmute
+
+
+	## VolumeDecreaseSlowly
+	## Alt + Ctrl + .  (>)
+	hc keybind Mod1-Control-comma spawn amixer -q -D pulse sset Master 1%- unmute
+
+
+	## VolumeIncreaseSlowly
+	## Alt + Ctrl + .  (>)
+	hc keybind Mod1-Control-period spawn amixer -q -D pulse sset Master 1%+ unmute
+
+
+	##
+	# collision occurs on bash emacs mode
+	# * `Alt + ,`
+	# * `Alt + .`
+	# * http://manpages.ubuntu.com/manpages/bionic/en/man3/readline.3readline.html#default%20key%20bindings
+	# * http://manpages.ubuntu.com/manpages/bionic/en/man1/bash.1.html#readline
+	##
+
+
+	## VolumeToggleMute
+	## XF86AudioMute
+	hc keybind XF86AudioMute spawn amixer -q -D pulse sset Master toggle
+
+
+	## VolumeDecrease
+	## XF86AudioLowerVolume
+	hc keybind XF86AudioLowerVolume spawn amixer -q -D pulse sset Master 5%- unmute
+
+
+	## VolumeIncrease
+	## XF86AudioRaiseVolume
+	hc keybind XF86AudioRaiseVolume spawn amixer -q -D pulse sset Master 5%+ unmute
+
 
 }
 
