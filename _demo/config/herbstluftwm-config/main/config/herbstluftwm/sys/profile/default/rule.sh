@@ -13,6 +13,8 @@ skel_rule () {
 	hc rule class=Atom tag=2 # move all Atom to tag 2
 	hc rule class=firefox tag=3 # move all Firefox to tag 3
 	hc rule class=pcmanfm-qt tag=4 # move all Pcmanfm-qt to tag 4
+	hc rule class=Thunar tag=4 # move all Thunar to tag 4
+
 	hc rule focus=on # normally focus new clients
 	hc rule floatplacement=smart
 	#hc rule focus=off # normally do not focus new clients
