@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+
+#PATH="$HOME/.config/herbstluftwm/bin:$PATH"
+#echo $PATH > /tmp/log.txt
+
+hlwm-wallpaper &
+
+hlwm-compositor &
+
+hlwm-panel &
+
+hlwm-applet &
