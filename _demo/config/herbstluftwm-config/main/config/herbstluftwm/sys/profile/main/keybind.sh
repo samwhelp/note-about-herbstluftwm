@@ -5,10 +5,20 @@
 ##
 
 skel_keybind () {
+
+	main_keybind_application_terminal
+	main_keybind_application_rofi
+	main_keybind_application_favorite
+
+	main_keybind_misc
+}
+
+main_keybind_misc () {
 	hc keybind $Mod-Shift-q quit
 	hc keybind $Mod-Shift-r reload
 	hc keybind $Mod-Shift-c close
-	hc keybind $Mod-Return spawn "${TERMINAL:-sakura}" # use your $TERMINAL with xterm as fallback
+
+
 
 	# basic movement in tiling and floating mode
 	# focusing clients
@@ -96,16 +106,56 @@ skel_keybind () {
 	hc keybind $Mod-c cycle
 	hc keybind $Mod-i jumpto urgent
 
+}
+
+##
+### Tail: Skel / Keybind
+################################################################################
+
+
+################################################################################
+### Head: Main / Keybind / Application / Terminal
+##
+
+main_keybind_application_terminal () {
+
 	# app / terminal
+	hc keybind $Mod-Return spawn "${TERMINAL:-sakura}" # use your $TERMINAL with xterm as fallback
 	hc keybind $Mod-Shift-a spawn sakura
 	hc keybind $Mod-Control-a spawn xfce4-terminal
 	hc keybind $Mod-Shift-t spawn xterm
 	hc keybind $Mod-Control-t spawn urxvt
 
+}
+
+##
+### Tail: Main / Keybind / Application / Terminal
+################################################################################
+
+
+################################################################################
+### Head: Main / Keybind / Application / Rofi
+##
+
+main_keybind_application_rofi () {
+
 	# app / rofi
 	#hc keybind $Mod-Shift-r spawn rofi -show run
 	hc keybind $Mod-Shift-w spawn rofi rofi -show window -show-icons
 	hc keybind $Mod-Shift-d spawn rofi rofi -show drun -show-icons
+
+}
+
+##
+### Tail: Main / Keybind / Terminal / Rofi
+################################################################################
+
+
+################################################################################
+### Head: Main / Keybind / Application / favorite
+##
+
+main_keybind_application_favorite () {
 
 	# app / favorite
 	#hc keybind $Mod-Shift-f spawn pcmanfm-qt
@@ -116,5 +166,5 @@ skel_keybind () {
 }
 
 ##
-### Tail: Skel / Keybind
+### Tail: Main / Keybind / Terminal / Favorit
 ################################################################################
