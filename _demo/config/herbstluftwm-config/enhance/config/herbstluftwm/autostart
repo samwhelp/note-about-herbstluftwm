@@ -111,6 +111,23 @@ hc keybind $Mod-Shift-Tab   cycle_all -1
 hc keybind $Mod-c cycle
 hc keybind $Mod-i jumpto urgent
 
+# app / terminal
+hc keybind $Mod-Shift-a spawn sakura
+hc keybind $Mod-Control-a spawn xfce4-terminal
+hc keybind $Mod-Shift-t spawn xterm
+hc keybind $Mod-Control-t spawn urxvt
+
+# app / rofi
+#hc keybind $Mod-Shift-r spawn rofi -show run
+hc keybind $Mod-Shift-w spawn rofi rofi -show window -show-icons
+hc keybind $Mod-Shift-d spawn rofi rofi -show drun -show-icons
+
+# app / favorite
+#hc keybind $Mod-Shift-f spawn pcmanfm-qt
+hc keybind $Mod-Shift-g spawn pcmanfm-qt
+hc keybind $Mod-Shift-b spawn firefox
+hc keybind $Mod-Shift-e spawn mousepad
+
 # theme
 hc attr theme.tiling.reset 1
 hc attr theme.floating.reset 1
@@ -125,7 +142,8 @@ hc set frame_transparent_width 5
 hc set frame_gap 4
 
 hc attr theme.title_height 15
-hc attr theme.title_font 'Dejavu Sans:pixelsize=12'  # example using Xft
+hc attr theme.title_font 'Noto Sans CJK TC:pixelsize=12'  # example using Xft
+#hc attr theme.title_font 'Dejavu Sans:pixelsize=12'  # example using Xft
 # hc attr theme.title_font '-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
 hc attr theme.padding_top 2  # space below the title's baseline (i.e. text depth)
 hc attr theme.active.color '#345F0Cef'
