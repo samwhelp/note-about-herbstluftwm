@@ -7,6 +7,7 @@
 skel_theme () {
 	main_theme_setting
 	main_theme_frame_hide
+	main_theme_window_title_hide
 }
 
 main_theme_setting () {
@@ -24,7 +25,7 @@ main_theme_setting () {
 	hc set frame_transparent_width 0 ## 5
 	hc set frame_gap 4
 
-	hc attr theme.title_height 15
+	hc attr theme.title_height 0 ## 15
 	hc attr theme.title_font 'Noto Sans CJK TC:pixelsize=12'  # example using Xft
 	#hc attr theme.title_font 'Dejavu Sans:pixelsize=12'  # example using Xft
 	# hc attr theme.title_font '-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
@@ -63,6 +64,9 @@ main_theme_frame_hide () {
 	~/.config/herbstluftwm/bin/hlwm-frame-ctrl hide
 }
 
+main_theme_window_title_hide () {
+	~/.config/herbstluftwm/bin/hlwm-window-ctrl title_hide
+}
 
 ##
 ### Tail: Skel / Theme

@@ -57,6 +57,10 @@ mod_remove_bin () {
 mod_remove_bin_ctrl () {
 	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-frame-ctrl"
 	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-frame-ctrl"
+
+
+	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-window-ctrl"
+	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-window-ctrl"
 }
 
 mod_remove_ext () {

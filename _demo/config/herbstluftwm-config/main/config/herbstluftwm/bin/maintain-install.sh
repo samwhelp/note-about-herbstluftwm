@@ -57,6 +57,10 @@ mod_install_bin () {
 mod_install_bin_ctrl () {
 	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-frame-ctrl $HOME/.config/herbstluftwm/bin/hlwm-frame-ctrl"
 	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-frame-ctrl" "$HOME/.config/herbstluftwm/bin/hlwm-frame-ctrl"
+
+	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-window-ctrl $HOME/.config/herbstluftwm/bin/hlwm-window-ctrl"
+	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-window-ctrl" "$HOME/.config/herbstluftwm/bin/hlwm-window-ctrl"
+
 }
 
 mod_install_ext () {

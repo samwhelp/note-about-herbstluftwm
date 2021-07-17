@@ -26,6 +26,7 @@ skel_keybind () {
 	main_keybind_window_floating
 	main_keybind_window_minimize
 	main_keybind_window_pseudotile
+	main_keybind_window_titletoggle
 
 	main_keybind_volume
 
@@ -377,6 +378,21 @@ main_keybind_window_pseudotile () {
 
 ##
 ### Tail: Main / Keybind / Window / PseudoTile
+################################################################################
+
+
+################################################################################
+### Head: Main / Keybind / Window / TitleToggle
+##
+
+main_keybind_window_titletoggle () {
+
+	hc keybind Mod4-t spawn ~/.config/herbstluftwm/bin/hlwm-window-ctrl title_toggle
+
+}
+
+##
+### Tail: Main / Keybind / Window / TitleToggle
 ################################################################################
 
 
