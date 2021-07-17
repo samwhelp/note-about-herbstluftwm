@@ -163,6 +163,9 @@ main_keybind_frame () {
 
 
 	hc keybind Mod4-i remove
+
+
+	hc keybind Mod4-y spawn ~/.config/herbstluftwm/bin/hlwm-frame-ctrl toggle
 }
 
 ##
@@ -240,7 +243,7 @@ main_keybind_window_focus () {
 
 
 	hc keybind Mod4-grave cycle
-	hc keybind Mod4-y jumpto urgent
+	hc keybind Mod4-e jumpto urgent
 
 	hc keybind Mod1-BackSpace   cycle_monitor
 }

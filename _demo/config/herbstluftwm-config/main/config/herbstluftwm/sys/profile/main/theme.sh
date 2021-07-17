@@ -5,6 +5,11 @@
 ##
 
 skel_theme () {
+	main_theme_setting
+	main_theme_frame_hide
+}
+
+main_theme_setting () {
 
 	# theme
 	hc attr theme.tiling.reset 1
@@ -13,10 +18,10 @@ skel_theme () {
 	hc set frame_border_normal_color '#101010cc'
 	hc set frame_bg_normal_color '#565656aa'
 	hc set frame_bg_active_color '#345F0Caa'
-	hc set frame_border_width 1
+	hc set frame_border_width 0 ## 1
 	hc set always_show_frame on
 	hc set frame_bg_transparent on
-	hc set frame_transparent_width 5
+	hc set frame_transparent_width 0 ## 5
 	hc set frame_gap 4
 
 	hc attr theme.title_height 15
@@ -52,6 +57,10 @@ skel_theme () {
 	hc set smart_frame_surroundings on
 	hc set mouse_recenter_gap 0
 
+}
+
+main_theme_frame_hide () {
+	~/.config/herbstluftwm/bin/hlwm-frame-ctrl hide
 }
 
 

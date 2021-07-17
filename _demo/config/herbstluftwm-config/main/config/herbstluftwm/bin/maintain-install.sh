@@ -21,6 +21,7 @@ source "$THE_BASE_DIR_PATH/init.sh"
 mod_install () {
 
 	mod_install_bin
+	mod_install_bin_ctrl
 	mod_install_ext
 
 	mod_install_sys_ext
@@ -51,6 +52,11 @@ mod_install_bin () {
 
 	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-applet $HOME/.config/herbstluftwm/bin/hlwm-applet"
 	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-applet" "$HOME/.config/herbstluftwm/bin/hlwm-applet"
+}
+
+mod_install_bin_ctrl () {
+	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-frame-ctrl $HOME/.config/herbstluftwm/bin/hlwm-frame-ctrl"
+	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-frame-ctrl" "$HOME/.config/herbstluftwm/bin/hlwm-frame-ctrl"
 }
 
 mod_install_ext () {

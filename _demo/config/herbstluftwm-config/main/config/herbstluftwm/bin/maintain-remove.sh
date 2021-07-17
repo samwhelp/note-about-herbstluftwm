@@ -21,6 +21,7 @@ source "$THE_BASE_DIR_PATH/init.sh"
 mod_remove () {
 
 	mod_remove_bin
+	mod_remove_bin_ctrl
 	mod_remove_ext
 
 	mod_remove_sys_ext
@@ -51,6 +52,11 @@ mod_remove_bin () {
 
 	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-applet"
 	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-applet"
+}
+
+mod_remove_bin_ctrl () {
+	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-frame-ctrl"
+	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-frame-ctrl"
 }
 
 mod_remove_ext () {
