@@ -62,7 +62,7 @@ main_keybind_misc () {
 
 main_keybind_system () {
 
-	hc keybind Mod1-Shift-z systemctl poweroff
+	hc keybind Mod1-Shift-z spawn systemctl poweroff
 	hc keybind Mod1-Shift-x quit
 	hc keybind Mod1-Shift-c reload
 
