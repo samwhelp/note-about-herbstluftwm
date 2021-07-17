@@ -31,7 +31,8 @@ source "$THE_SYS_EXT_DIR_PATH/init.sh"
 ##
 
 
-source "$THE_SYS_PROFILE_DIR_PATH/default/theme.sh"
+#source "$THE_SYS_PROFILE_DIR_PATH/default/theme.sh"
+source "$THE_SYS_PROFILE_DIR_PATH/main/theme.sh"
 
 
 ##
@@ -43,7 +44,8 @@ source "$THE_SYS_PROFILE_DIR_PATH/default/theme.sh"
 ### Head: Keybind
 ##
 
-source "$THE_SYS_PROFILE_DIR_PATH/default/keybind.sh"
+#source "$THE_SYS_PROFILE_DIR_PATH/default/keybind.sh"
+source "$THE_SYS_PROFILE_DIR_PATH/main/keybind.sh"
 
 ##
 ### Tail: Keybind
@@ -54,7 +56,8 @@ source "$THE_SYS_PROFILE_DIR_PATH/default/keybind.sh"
 ### Head: Rule
 ##
 
-source "$THE_SYS_PROFILE_DIR_PATH/default/rule.sh"
+#source "$THE_SYS_PROFILE_DIR_PATH/default/rule.sh"
+source "$THE_SYS_PROFILE_DIR_PATH/main/rule.sh"
 
 ##
 ### Tail: Rule

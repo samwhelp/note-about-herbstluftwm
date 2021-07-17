@@ -26,6 +26,7 @@ mod_remove () {
 	mod_remove_sys_ext
 
 	mod_remove_sys_profile_default
+	mod_remove_sys_profile_main
 
 	mod_remove_check
 
@@ -87,6 +88,18 @@ mod_remove_sys_profile_default () {
 	echo "rm -f $HOME/.config/herbstluftwm/sys/profile/default/rule.sh"
 	rm -f "$HOME/.config/herbstluftwm/sys/profile/default/rule.sh"
 }
+
+mod_remove_sys_profile_main () {
+	echo "rm -f $HOME/.config/herbstluftwm/sys/profile/main/keybind.sh"
+	rm -f "$HOME/.config/herbstluftwm/sys/profile/main/keybind.sh"
+
+	echo "rm -f $HOME/.config/herbstluftwm/sys/profile/main/theme.sh"
+	rm -f "$HOME/.config/herbstluftwm/sys/profile/main/theme.sh"
+
+	echo "rm -f $HOME/.config/herbstluftwm/sys/profile/main/rule.sh"
+	rm -f "$HOME/.config/herbstluftwm/sys/profile/main/rule.sh"
+}
+
 
 mod_remove_check () {
 	echo
