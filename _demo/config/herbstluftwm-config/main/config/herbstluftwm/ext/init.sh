@@ -28,8 +28,8 @@ base_var_dump
 
 ## extra function
 source "$THE_EXT_DIR_PATH/util.sh"
-#source "$THE_EXT_DIR_PATH/func.sh"
-#source "$THE_EXT_DIR_PATH/model.sh"
+source "$THE_EXT_DIR_PATH/hlwm.sh"
+
 
 ##
 ### Tail: Func Init

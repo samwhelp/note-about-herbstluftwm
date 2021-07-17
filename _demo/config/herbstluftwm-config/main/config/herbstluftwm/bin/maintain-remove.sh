@@ -23,6 +23,8 @@ mod_remove () {
 	mod_remove_bin
 	mod_remove_ext
 
+	mod_remove_sys_ext
+
 	mod_remove_check
 
 }
@@ -57,6 +59,17 @@ mod_remove_ext () {
 
 	echo "rm -f $HOME/.config/herbstluftwm/ext/util.sh"
 	rm -f "$HOME/.config/herbstluftwm/ext/util.sh"
+
+	echo "rm -f $HOME/.config/herbstluftwm/ext/hlwm.sh"
+	rm -f "$HOME/.config/herbstluftwm/ext/hlwm.sh"
+}
+
+mod_remove_sys_ext () {
+	echo "rm -f $HOME/.config/herbstluftwm/sys/ext/init.sh"
+	rm -f "$HOME/.config/herbstluftwm/sys/ext/init.sh"
+
+	echo "rm -f $HOME/.config/herbstluftwm/sys/ext/skel.sh"
+	rm -f "$HOME/.config/herbstluftwm/sys/ext/skel.sh"
 }
 
 
