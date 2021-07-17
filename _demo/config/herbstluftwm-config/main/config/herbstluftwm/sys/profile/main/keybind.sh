@@ -136,7 +136,7 @@ main_keybind_application_rofi () {
 main_keybind_application_favorite () {
 
 	# app / favorite
-	#hc keybind Mod1-Shift-f spawn pcmanfm-qt
+	hc keybind Mod1-Shift-f spawn pcmanfm-qt
 	hc keybind Mod1-Shift-g spawn pcmanfm-qt
 	hc keybind Mod1-Shift-b spawn firefox
 	hc keybind Mod1-Shift-e spawn mousepad
