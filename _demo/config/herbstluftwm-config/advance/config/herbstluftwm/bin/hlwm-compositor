@@ -26,19 +26,19 @@ source "$THE_BASE_DIR_PATH/init.sh"
 
 
 ################################################################################
-### Head: Im / Fcitx
+### Head: Compositor / Picom
 ##
 
 app_picom_start () {
 
-	is_command_exist 'pkill' && pkill picom
+	util_stop_all 'picom'
 
 	is_command_exist 'picom' && picom &
 
 }
 
 ##
-### Tail: Im / Fcitx
+### Tail: Compositor / Picom
 ################################################################################
 
 
