@@ -4,8 +4,11 @@
 
 ## Config File Path
 
-* [/etc/xdg/herbstluftwm/autostart](https://github.com/herbstluftwm/herbstluftwm/blob/master/share/autostart)
-* ~/.config/herbstluftwm/autostart
+| Path | Note |
+| --- | --- |
+| [/etc/xdg/herbstluftwm/autostart](https://github.com/herbstluftwm/herbstluftwm/blob/master/share/autostart) | default |
+| [~/.config/herbstluftwm/autostart](https://github.com/samwhelp/note-about-herbstluftwm/blob/gh-pages/_demo/config/herbstluftwm-config/default/config/herbstluftwm/autostart) | user |
+
 
 ## Link
 
