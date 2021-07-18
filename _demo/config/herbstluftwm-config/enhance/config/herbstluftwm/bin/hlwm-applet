@@ -31,7 +31,7 @@ source "$THE_BASE_DIR_PATH/init.sh"
 
 app_fcitx_start () {
 
-	is_command_exist 'pkill' && pkill fcitx
+	util_stop_all 'fcitx'
 
 	is_command_exist 'fcitx' && fcitx &
 
@@ -48,7 +48,7 @@ app_fcitx_start () {
 
 app_nm_applet_start () {
 
-	is_command_exist 'pkill' && pkill nm-applet
+	util_stop_all 'nm-applet'
 
 	is_command_exist 'nm-applet' && nm-applet &
 
@@ -65,7 +65,7 @@ app_nm_applet_start () {
 
 app_blueman_applet_start () {
 
-	is_command_exist 'pkill' && pkill blueman-applet
+	util_stop_all 'blueman-applet'
 
 	is_command_exist 'blueman-applet' && blueman-applet &
 
@@ -77,19 +77,19 @@ app_blueman_applet_start () {
 
 
 ################################################################################
-### Head: Network / nm-applet
+### Head: Volume / mate-volume-control-status-icon
 ##
 
 app_mate_volume_control_status_icon_start () {
 
-	is_command_exist 'pkill' && pkill mate-volume-control-status-icon
+	util_stop_all 'mate-volume-control-status-icon'
 
 	is_command_exist 'mate-volume-control-status-icon' && mate-volume-control-status-icon &
 
 }
 
 ##
-### Tail: Network / nm-applet
+### Tail: Volume / mate-volume-control-status-icon
 ################################################################################
 
 

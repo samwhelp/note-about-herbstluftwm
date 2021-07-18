@@ -46,7 +46,7 @@ sys_feh_wallpaper_default () {
 	#wallpaper_file_path="$HOME/Pictures/Wallpaper/bg.jpg"
 
 
-	s_command_exist 'pkill' && pkill feh
+	util_stop_all 'feh'
 
 	is_command_exist 'feh' && feh --bg-scale "$wallpaper_file_path" &
 

@@ -31,7 +31,7 @@ source "$THE_BASE_DIR_PATH/init.sh"
 
 app_polybar_start () {
 
-	is_command_exist 'pkill' && pkill polybar
+	util_stop_all 'polybar'
 
 	if [ -f "$THE_STYLE_POLYBAR_CONFIG_FILE_PATH" ]; then
 		is_command_exist 'polybar' && polybar top -c "$THE_STYLE_POLYBAR_CONFIG_FILE_PATH" &
