@@ -13,6 +13,7 @@
 
 * [入門](#入門)
 * [設定](#設定)
+* [設定範例](#設定範例)
 
 
 ### 入門
@@ -28,3 +29,14 @@
 | --- |
 | [設定檔路徑](https://samwhelp.github.io/note-about-herbstluftwm/read/config.html) |
 | [我的鍵盤按鍵綁定](https://samwhelp.github.io/note-about-herbstluftwm/read/config/keybind.html) |
+
+
+### 設定範例
+
+| 設定範例 |
+| --- |
+| [default](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/default) |
+| [basic](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/basic) |
+| [advance](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/advance) |
+| [enhance](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/enhance) |
+| [main](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/main) |
