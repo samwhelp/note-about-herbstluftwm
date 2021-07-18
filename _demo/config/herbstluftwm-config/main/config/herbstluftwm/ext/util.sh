@@ -16,7 +16,7 @@ util_debug_echo () {
 
 
 ################################################################################
-### Head: Util  / Command
+### Head: Util / Command
 ##
 
 is_function_exist () {
