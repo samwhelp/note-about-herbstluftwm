@@ -44,3 +44,10 @@ parent: 使用情境(客製)
 | 按鍵組合 | 功能 |
 | --- | --- |
 | `Win + p` | 將目前聚焦的視窗，切換 「Pseudo Tile」模式 |
+
+
+## Frame顯示
+
+| 按鍵組合 | 功能 | 指令 | 程式
+| --- | --- | --- | --- |
+| `Win + t` | 反覆按，可以切換「Window Title」顯示或隱藏。 | `hlwm-window-ctrl toggle` | [hlwm-window-ctrl](https://github.com/samwhelp/note-about-herbstluftwm/blob/gh-pages/_demo/config/herbstluftwm-config/main/config/herbstluftwm/bin/hlwm-window-ctrl) |

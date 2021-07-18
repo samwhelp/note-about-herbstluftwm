@@ -28,3 +28,10 @@ parent: 使用情境(客製)
 | 按鍵組合 | 功能 |
 | --- | --- |
 | `Win + i` | 將最近一個分割出來的Frame移除。 |
+
+
+## Frame顯示
+
+| 按鍵組合 | 功能 | 指令 | 程式
+| --- | --- | --- | --- |
+| `Win + y` | 反覆按，可以切換「Frame」顯示或隱藏。 | `hlwm-frame-ctrl toggle` | [hlwm-frame-ctrl](https://github.com/samwhelp/note-about-herbstluftwm/blob/gh-pages/_demo/config/herbstluftwm-config/main/config/herbstluftwm/bin/hlwm-frame-ctrl) |

@@ -40,3 +40,10 @@
 | [advance](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/advance) |
 | [enhance](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/enhance) |
 | [main](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/main) |
+
+
+## 輔助工具
+
+| 工具 | 指令 | 功能 |
+| --- | --- | --- |
+| [wallpaper-select-feh](https://samwhelp.github.io/note-about-fzf/read/project/wallpaper-select/wallpaper-select-feh) | `wallpaper-select-feh fzf` | 設定桌面圖片 |
