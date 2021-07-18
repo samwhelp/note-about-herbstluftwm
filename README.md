@@ -28,7 +28,7 @@
 | 議題 |
 | --- |
 | [設定檔路徑](https://samwhelp.github.io/note-about-herbstluftwm/read/config.html) |
-| [我的鍵盤按鍵綁定](https://samwhelp.github.io/note-about-herbstluftwm/read/config/keybind.html) |
+| [鍵盤按鍵綁定](https://samwhelp.github.io/note-about-herbstluftwm/read/config/keybind.html) |
 
 
 ### 設定範例
