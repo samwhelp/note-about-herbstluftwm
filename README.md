@@ -14,6 +14,9 @@
 * [入門](#入門)
 * [設定](#設定)
 * [設定範例](#設定範例)
+* [使用情境](#使用情境)
+* [輔助工具](#輔助工具)
+
 
 
 ### 入門
@@ -42,7 +45,15 @@
 | [main](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/main) |
 
 
-## 輔助工具
+### 使用情境
+
+| 使用情境 |
+| --- |
+| [預設](https://samwhelp.github.io/note-about-herbstluftwm/read/scenario_default.html) |
+| [客製](https://samwhelp.github.io/note-about-herbstluftwm/read/scenario.html) |
+
+
+### 輔助工具
 
 | 工具 | 指令 | 功能 |
 | --- | --- | --- |

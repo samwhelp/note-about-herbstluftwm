@@ -4,12 +4,12 @@ nav_order: 5001
 has_children: true
 ---
 
-# 使用情境(客制)
+# 使用情境(客製)
 
 
 ## 設定檔
 
-採用「客制的設定檔」，
+採用「客製的設定檔」，
 
 請參考「[我的設定](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/main/config/herbstluftwm)」。
 
