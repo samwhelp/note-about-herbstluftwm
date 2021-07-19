@@ -61,6 +61,9 @@ mod_install_bin_ctrl () {
 	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-window-ctrl $HOME/.config/herbstluftwm/bin/hlwm-window-ctrl"
 	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-window-ctrl" "$HOME/.config/herbstluftwm/bin/hlwm-window-ctrl"
 
+	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-wallpaper-ctrl $HOME/.config/herbstluftwm/bin/hlwm-wallpaper-ctrl"
+	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-wallpaper-ctrl" "$HOME/.config/herbstluftwm/bin/hlwm-wallpaper-ctrl"
+
 }
 
 mod_install_ext () {

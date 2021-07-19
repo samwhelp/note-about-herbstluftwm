@@ -61,6 +61,10 @@ mod_remove_bin_ctrl () {
 
 	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-window-ctrl"
 	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-window-ctrl"
+
+	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-wallpaper-ctrl"
+	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-wallpaper-ctrl"
+
 }
 
 mod_remove_ext () {

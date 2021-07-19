@@ -16,6 +16,7 @@ skel_keybind () {
 	main_keybind_tag
 
 	main_keybind_frame
+	main_keybind_wallpaper
 
 	main_keybind_window_focus
 	main_keybind_window_move
@@ -171,6 +172,21 @@ main_keybind_frame () {
 
 ##
 ### Tail: Main / Keybind / Frame
+################################################################################
+
+
+################################################################################
+### Head: Main / Keybind / Wallpaper
+##
+
+main_keybind_wallpaper () {
+
+	hc keybind Mod1-w spawn ~/.config/herbstluftwm/bin/hlwm-wallpaper-ctrl shuf
+	hc keybind Mod1-Shift-w spawn ~/.config/herbstluftwm/bin/hlwm-wallpaper-ctrl default
+}
+
+##
+### Tail: Main / Keybind / Wallpaper
 ################################################################################
 
 

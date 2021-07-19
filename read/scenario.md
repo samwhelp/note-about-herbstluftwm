@@ -21,7 +21,7 @@ has_children: true
 * [Layout操作](#Layout操作)
 * [視窗操作](#視窗操作)
 * [音量控制](#音量控制)
-
+* [桌面圖片](#桌面圖片)
 
 ## 系統操作
 
@@ -61,3 +61,10 @@ has_children: true
 | 主題 |
 | --- |
 | [音量控制](scenario/main/volume-control) |
+
+
+## 桌面圖片
+
+| 主題 |
+| --- |
+| [桌面圖片](scenario/main/wallpaper-control) |
