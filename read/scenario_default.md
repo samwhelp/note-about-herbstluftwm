@@ -22,7 +22,7 @@ has_children: true
 
 * [系統操作](#系統操作)
 * [開啟應用程式](#開啟應用程式)
-* [Layout操作](#Layout操作)
+* [Layout操作](#layout操作)
 * [視窗操作](#視窗操作)
 
 
