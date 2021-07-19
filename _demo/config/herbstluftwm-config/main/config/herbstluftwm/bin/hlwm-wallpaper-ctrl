@@ -45,7 +45,10 @@ mod_wallpaper_default () {
 	echo "mod_wallpaper_default"
 	#echo "$@"
 
-	is_command_exist 'wallpaper-select-feh' && wallpaper-select-feh default
+	#is_command_exist 'wallpaper-select-feh' && wallpaper-select-feh default
+
+	is_command_exist 'wallpaper-select-feh' && wallpaper-select-feh set "$HOME/Pictures/Wallpaper/default.png"
+
 
 }
 

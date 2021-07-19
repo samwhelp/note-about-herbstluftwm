@@ -182,7 +182,7 @@ main_keybind_frame () {
 main_keybind_wallpaper () {
 
 	hc keybind Mod1-w spawn ~/.config/herbstluftwm/bin/hlwm-wallpaper-ctrl shuf
-	hc keybind Mod1-Shift-w spawn ~/.config/herbstluftwm/bin/hlwm-wallpaper-ctrl default
+	hc keybind Mod1-Control-w spawn ~/.config/herbstluftwm/bin/hlwm-wallpaper-ctrl default
 }
 
 ##
