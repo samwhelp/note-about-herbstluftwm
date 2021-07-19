@@ -422,8 +422,6 @@ main_keybind_volume () {
 	hc keybind Mod1-Shift-v spawn mate-volume-control
 
 
-	hc keybind Mod1-m spawn
-
 	## VolumeToggleMute
 	## Alt + m
 	hc keybind Mod1-m spawn amixer -q -D pulse sset Master toggle

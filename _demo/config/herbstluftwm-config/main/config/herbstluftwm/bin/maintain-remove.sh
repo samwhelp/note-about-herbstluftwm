@@ -27,6 +27,8 @@ mod_remove () {
 	mod_remove_sys_ext
 
 	mod_remove_sys_profile_default
+	mod_remove_sys_profile_default_enhance
+
 	mod_remove_sys_profile_main
 
 	mod_remove_check
@@ -101,6 +103,17 @@ mod_remove_sys_profile_default () {
 
 	echo "rm -f $HOME/.config/herbstluftwm/sys/profile/default/rule.sh"
 	rm -f "$HOME/.config/herbstluftwm/sys/profile/default/rule.sh"
+}
+
+mod_remove_sys_profile_default_enhance () {
+	echo "rm -f $HOME/.config/herbstluftwm/sys/profile/default_enhance/keybind.sh"
+	rm -f "$HOME/.config/herbstluftwm/sys/profile/default_enhance/keybind.sh"
+
+	#echo "rm -f $HOME/.config/herbstluftwm/sys/profile/default_enhance/theme.sh"
+	#rm -f "$HOME/.config/herbstluftwm/sys/profile/default_enhance/theme.sh"
+
+	#echo "rm -f $HOME/.config/herbstluftwm/sys/profile/default_enhance/rule.sh"
+	#rm -f "$HOME/.config/herbstluftwm/sys/profile/default_enhance/rule.sh"
 }
 
 mod_remove_sys_profile_main () {

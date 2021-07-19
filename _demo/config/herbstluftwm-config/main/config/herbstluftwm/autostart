@@ -45,6 +45,7 @@ source "$THE_SYS_PROFILE_DIR_PATH/main/theme.sh"
 ##
 
 #source "$THE_SYS_PROFILE_DIR_PATH/default/keybind.sh"
+#source "$THE_SYS_PROFILE_DIR_PATH/default_enhance/keybind.sh"
 source "$THE_SYS_PROFILE_DIR_PATH/main/keybind.sh"
 
 ##

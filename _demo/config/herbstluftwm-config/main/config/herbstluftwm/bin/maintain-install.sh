@@ -27,6 +27,8 @@ mod_install () {
 	mod_install_sys_ext
 
 	mod_install_sys_profile_default
+	mod_install_sys_profile_default_enhance
+
 	mod_install_sys_profile_main
 
 	mod_install_check
@@ -106,6 +108,19 @@ mod_install_sys_profile_default () {
 
 	echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/default/rule.sh $HOME/.config/herbstluftwm/sys/profile/default/rule.sh"
 	install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/default/rule.sh" "$HOME/.config/herbstluftwm/sys/profile/default/rule.sh"
+
+}
+
+mod_install_sys_profile_default_enhance () {
+
+	echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/default_enhance/keybind.sh $HOME/.config/herbstluftwm/sys/profile/default_enhance/keybind.sh"
+	install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/default_enhance/keybind.sh" "$HOME/.config/herbstluftwm/sys/profile/default_enhance/keybind.sh"
+
+	#echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/default_enhance/theme.sh $HOME/.config/herbstluftwm/sys/profile/default_enhance/theme.sh"
+	#install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/default_enhance/theme.sh" "$HOME/.config/herbstluftwm/sys/profile/default_enhance/theme.sh"
+
+	#echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/default_enhance/rule.sh $HOME/.config/herbstluftwm/sys/profile/default_enhance/rule.sh"
+	#install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/default_enhance/rule.sh" "$HOME/.config/herbstluftwm/sys/profile/default_enhance/rule.sh"
 
 }
 
