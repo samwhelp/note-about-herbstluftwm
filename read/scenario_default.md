@@ -18,6 +18,21 @@ has_children: true
 即可使用。
 
 
+## 主題
+
+* [系統操作](#系統操作)
+* [開啟應用程式](#開啟應用程式)
+* [Layout操作](#Layout操作)
+* [視窗操作](#視窗操作)
+
+
+## 系統操作
+
+| 主題 |
+| --- |
+| [系統操作](scenario/default/system-control) |
+
+
 ## 開啟應用程式
 
 | 主題 |
@@ -39,18 +54,3 @@ has_children: true
 | --- |
 | [視窗移動操作](scenario/default/window-movement-control) |
 | [視窗其他操作](scenario/default/window-control) |
-
-
-
-## 系統操作
-
-| 主題 |
-| --- |
-| [系統操作](scenario/default/system-control) |
-
-
-## 音量控制
-
-| 主題 |
-| --- |
-| [音量控制](scenario/default/volume-control) |

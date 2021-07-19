@@ -1,7 +1,26 @@
 
 
 ################################################################################
-### Head: Base Function
+### Head: Util / Debug
+##
+
+util_debug_echo () {
+	if is_debug; then
+		echo "$@" 1>&2
+	fi
+}
+
+util_error_echo () {
+	echo "$@" 1>&2
+}
+
+##
+### Head: Util / Debug
+################################################################################
+
+
+################################################################################
+### Head: Base
 ##
 
 ## THE_BASE_DIR_PATH=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
@@ -71,56 +90,56 @@ base_var_dump () {
 
 	is_not_debug && return 0
 
-	echo
-	echo "################################################################################"
-	echo "### Head: var_dump"
-	echo "##"
-	echo "#"
-	echo
+	util_debug_echo
+	util_debug_echo "################################################################################"
+	util_debug_echo "### Head: var_dump"
+	util_debug_echo "##"
+	util_debug_echo "#"
+	util_debug_echo
 
 
-	echo "THE_PLAN_DIR_PATH=$THE_PLAN_DIR_PATH"
+	util_debug_echo "THE_PLAN_DIR_PATH=$THE_PLAN_DIR_PATH"
 
 
-	echo "THE_BIN_DIR_NAME=$THE_BIN_DIR_NAME"
-	echo "THE_BIN_DIR_PATH=$THE_BIN_DIR_PATH"
+	util_debug_echo "THE_BIN_DIR_NAME=$THE_BIN_DIR_NAME"
+	util_debug_echo "THE_BIN_DIR_PATH=$THE_BIN_DIR_PATH"
 
-	echo "THE_EXT_DIR_NAME=$THE_EXT_DIR_NAME"
-	echo "THE_EXT_DIR_PATH=$THE_EXT_DIR_PATH"
+	util_debug_echo "THE_EXT_DIR_NAME=$THE_EXT_DIR_NAME"
+	util_debug_echo "THE_EXT_DIR_PATH=$THE_EXT_DIR_PATH"
 
-	echo "THE_MAK_DIR_NAME=$THE_MAK_DIR_NAME"
-	echo "THE_MAK_DIR_PATH=$THE_MAK_DIR_PATH"
+	util_debug_echo "THE_MAK_DIR_NAME=$THE_MAK_DIR_NAME"
+	util_debug_echo "THE_MAK_DIR_PATH=$THE_MAK_DIR_PATH"
 
-	echo "THE_SYS_DIR_NAME=$THE_SYS_DIR_NAME"
-	echo "THE_SYS_DIR_PATH=$THE_SYS_DIR_PATH"
+	util_debug_echo "THE_SYS_DIR_NAME=$THE_SYS_DIR_NAME"
+	util_debug_echo "THE_SYS_DIR_PATH=$THE_SYS_DIR_PATH"
 
-	echo "THE_SYS_EXT_DIR_NAME=$THE_SYS_EXT_DIR_NAME"
-	echo "THE_SYS_EXT_DIR_PATH=$THE_SYS_EXT_DIR_PATH"
+	util_debug_echo "THE_SYS_EXT_DIR_NAME=$THE_SYS_EXT_DIR_NAME"
+	util_debug_echo "THE_SYS_EXT_DIR_PATH=$THE_SYS_EXT_DIR_PATH"
 
-	echo "THE_SYS_PROFILE_DIR_NAME=$THE_SYS_PROFILE_DIR_NAME"
-	echo "THE_SYS_PROFILE_DIR_PATH=$THE_SYS_PROFILE_DIR_PATH"
+	util_debug_echo "THE_SYS_PROFILE_DIR_NAME=$THE_SYS_PROFILE_DIR_NAME"
+	util_debug_echo "THE_SYS_PROFILE_DIR_PATH=$THE_SYS_PROFILE_DIR_PATH"
 
-	echo "THE_SYS_CACHE_DIR_NAME=$THE_SYS_CACHE_DIR_NAME"
-	echo "THE_SYS_CACHE_DIR_PATH=$THE_SYS_CACHE_DIR_PATH"
+	util_debug_echo "THE_SYS_CACHE_DIR_NAME=$THE_SYS_CACHE_DIR_NAME"
+	util_debug_echo "THE_SYS_CACHE_DIR_PATH=$THE_SYS_CACHE_DIR_PATH"
 
-	echo "THE_STYLE_DIR_NAME=$THE_STYLE_DIR_NAME"
-	echo "THE_STYLE_DIR_PATH=$THE_STYLE_DIR_PATH"
-
-
-	echo "THE_STYLE_PICOM_CONFIG_FILE_PATH=$THE_STYLE_PICOM_CONFIG_FILE_PATH"
-
-	echo "THE_STYLE_POLYBAR_CONFIG_FILE_PATH=$THE_STYLE_POLYBAR_CONFIG_FILE_PATH"
+	util_debug_echo "THE_STYLE_DIR_NAME=$THE_STYLE_DIR_NAME"
+	util_debug_echo "THE_STYLE_DIR_PATH=$THE_STYLE_DIR_PATH"
 
 
+	util_debug_echo "THE_STYLE_PICOM_CONFIG_FILE_PATH=$THE_STYLE_PICOM_CONFIG_FILE_PATH"
 
-	echo
-	echo "#"
-	echo "##"
-	echo "### Tail: var_dump"
-	echo "################################################################################"
-	echo
+	util_debug_echo "THE_STYLE_POLYBAR_CONFIG_FILE_PATH=$THE_STYLE_POLYBAR_CONFIG_FILE_PATH"
+
+
+
+	util_debug_echo
+	util_debug_echo "#"
+	util_debug_echo "##"
+	util_debug_echo "### Tail: var_dump"
+	util_debug_echo "################################################################################"
+	util_debug_echo
 }
 
 ##
-### Tail: Base Function
+### Tail: Base
 ################################################################################

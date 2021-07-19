@@ -14,6 +14,22 @@ has_children: true
 請參考「[我的設定](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/main/config/herbstluftwm)」。
 
 
+## 主題
+
+* [系統操作](#系統操作)
+* [開啟應用程式](#開啟應用程式)
+* [Layout操作](#Layout操作)
+* [視窗操作](#視窗操作)
+* [音量控制](#音量控制)
+
+
+## 系統操作
+
+| 主題 |
+| --- |
+| [系統操作](scenario/main/system-control) |
+
+
 ## 開啟應用程式
 
 | 主題 |
@@ -38,13 +54,6 @@ has_children: true
 | --- |
 | [視窗移動操作](scenario/main/window-movement-control) |
 | [視窗其他操作](scenario/main/window-control) |
-
-
-## 系統操作
-
-| 主題 |
-| --- |
-| [系統操作](scenario/main/system-control) |
 
 
 ## 音量控制
