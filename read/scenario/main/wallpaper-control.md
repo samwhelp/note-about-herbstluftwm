@@ -19,5 +19,5 @@ parent: 使用情境(客製)
 ### 注意事項
 
 * 這個功能需要有「[wallpaper-select-feh](https://samwhelp.github.io/note-about-fzf/read/project/wallpaper-select/wallpaper-select-feh.html)」這個輔助工具。
-* 隨機選取的資夾路徑是「[~/Pictures/Wallpaper](https://github.com/samwhelp/note-about-herbstluftwm/blob/gh-pages/_demo/config/herbstluftwm-config/main/config/herbstluftwm/bin/hlwm-wallpaper-ctrl#L56)」，所以要把圖片放到這個資料夾。
+* 隨機選取的資夾路徑是「[~/Pictures/Wallpaper](https://github.com/samwhelp/note-about-herbstluftwm/blob/gh-pages/_demo/config/herbstluftwm-config/main/config/herbstluftwm/bin/hlwm-wallpaper-ctrl#L59)」，所以要把圖片放到這個資料夾。
 * 預設的圖片是「[~/Pictures/Wallpaper/default.png](https://github.com/samwhelp/note-about-herbstluftwm/blob/gh-pages/_demo/config/herbstluftwm-config/main/config/herbstluftwm/bin/hlwm-wallpaper-ctrl#L50)」。
