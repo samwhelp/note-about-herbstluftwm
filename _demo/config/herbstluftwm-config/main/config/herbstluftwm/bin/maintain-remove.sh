@@ -94,6 +94,9 @@ mod_remove_sys_ext () {
 
 	echo "rm -f $HOME/.config/herbstluftwm/sys/ext/default.sh"
 	rm -f "$HOME/.config/herbstluftwm/sys/ext/default.sh"
+
+	echo "rm -f $HOME/.config/herbstluftwm/sys/ext/profile.sh"
+	rm -f "$HOME/.config/herbstluftwm/sys/ext/profile.sh"
 }
 
 mod_remove_sys_profile_default () {

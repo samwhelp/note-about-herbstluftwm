@@ -97,6 +97,9 @@ mod_install_sys_ext () {
 	echo "install -Dm644 $THE_SYS_EXT_DIR_PATH/default.sh $HOME/.config/herbstluftwm/sys/ext/default.sh"
 	install -Dm644 "$THE_SYS_EXT_DIR_PATH/default.sh" "$HOME/.config/herbstluftwm/sys/ext/default.sh"
 
+	echo "install -Dm644 $THE_SYS_EXT_DIR_PATH/profile.sh $HOME/.config/herbstluftwm/sys/ext/profile.sh"
+	install -Dm644 "$THE_SYS_EXT_DIR_PATH/profile.sh" "$HOME/.config/herbstluftwm/sys/ext/profile.sh"
+
 }
 
 
