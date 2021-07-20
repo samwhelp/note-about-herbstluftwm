@@ -31,6 +31,8 @@ mod_remove () {
 
 	mod_remove_sys_profile_main
 
+	mod_remove_sys_profile_nord_aurora
+
 	mod_remove_check
 
 }
@@ -125,6 +127,18 @@ mod_remove_sys_profile_main () {
 
 	echo "rm -f $HOME/.config/herbstluftwm/sys/profile/main/rule.sh"
 	rm -f "$HOME/.config/herbstluftwm/sys/profile/main/rule.sh"
+}
+
+
+mod_remove_sys_profile_nord_aurora () {
+	#echo "rm -f $HOME/.config/herbstluftwm/sys/profile/nord_aurora/keybind.sh"
+	#rm -f "$HOME/.config/herbstluftwm/sys/profile/nord_aurora/keybind.sh"
+
+	echo "rm -f $HOME/.config/herbstluftwm/sys/profile/nord_aurora/theme.sh"
+	rm -f "$HOME/.config/herbstluftwm/sys/profile/nord_aurora/theme.sh"
+
+	#echo "rm -f $HOME/.config/herbstluftwm/sys/profile/nord_aurora/rule.sh"
+	#rm -f "$HOME/.config/herbstluftwm/sys/profile/nord_aurora/rule.sh"
 }
 
 

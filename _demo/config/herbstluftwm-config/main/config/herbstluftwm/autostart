@@ -32,7 +32,8 @@ source "$THE_SYS_EXT_DIR_PATH/init.sh"
 
 
 #source "$THE_SYS_PROFILE_DIR_PATH/default/theme.sh"
-source "$THE_SYS_PROFILE_DIR_PATH/main/theme.sh"
+#source "$THE_SYS_PROFILE_DIR_PATH/main/theme.sh"
+source "$THE_SYS_PROFILE_DIR_PATH/nord_aurora/theme.sh"
 
 
 ##

@@ -31,6 +31,8 @@ mod_install () {
 
 	mod_install_sys_profile_main
 
+	mod_install_sys_profile_nord_aurora
+
 	mod_install_check
 
 }
@@ -124,18 +126,6 @@ mod_install_sys_profile_default_enhance () {
 
 }
 
-mod_install_sys_profile_main () {
-
-	echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/default/keybind.sh $HOME/.config/herbstluftwm/sys/profile/default/keybind.sh"
-	install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/default/keybind.sh" "$HOME/.config/herbstluftwm/sys/profile/default/keybind.sh"
-
-	echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/default/theme.sh $HOME/.config/herbstluftwm/sys/profile/default/theme.sh"
-	install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/default/theme.sh" "$HOME/.config/herbstluftwm/sys/profile/default/theme.sh"
-
-	echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/default/rule.sh $HOME/.config/herbstluftwm/sys/profile/default/rule.sh"
-	install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/default/rule.sh" "$HOME/.config/herbstluftwm/sys/profile/default/rule.sh"
-
-}
 
 mod_install_sys_profile_main () {
 
@@ -147,6 +137,19 @@ mod_install_sys_profile_main () {
 
 	echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/main/rule.sh $HOME/.config/herbstluftwm/sys/profile/main/rule.sh"
 	install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/main/rule.sh" "$HOME/.config/herbstluftwm/sys/profile/main/rule.sh"
+
+}
+
+mod_install_sys_profile_nord_aurora () {
+
+	#echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/nord_aurora/keybind.sh $HOME/.config/herbstluftwm/sys/profile/nord_aurora/keybind.sh"
+	#install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/nord_aurora/keybind.sh" "$HOME/.config/herbstluftwm/sys/profile/nord_aurora/keybind.sh"
+
+	echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/nord_aurora/theme.sh $HOME/.config/herbstluftwm/sys/profile/nord_aurora/theme.sh"
+	install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/nord_aurora/theme.sh" "$HOME/.config/herbstluftwm/sys/profile/nord_aurora/theme.sh"
+
+	#echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/nord_aurora/rule.sh $HOME/.config/herbstluftwm/sys/profile/nord_aurora/rule.sh"
+	#install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/nord_aurora/rule.sh" "$HOME/.config/herbstluftwm/sys/profile/nord_aurora/rule.sh"
 
 }
 

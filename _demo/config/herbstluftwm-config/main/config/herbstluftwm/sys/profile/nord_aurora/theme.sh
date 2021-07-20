@@ -5,20 +5,28 @@
 ##
 
 skel_theme () {
-	main_theme_setting
-	main_theme_frame_hide
-	main_theme_window_title_hide
+	nord_aurora_theme_setting
+	nord_aurora_theme_frame_hide
+	nord_aurora_theme_window_title_hide
 }
 
-main_theme_setting () {
+nord_aurora_theme_setting () {
+
+	##
+	## ## Aurora
+	## * https://www.nordtheme.com/docs/colors-and-palettes
+	## * https://github.com/arcticicestudio/nord-docs/
+	## * https://github.com/arcticicestudio/nord-docs/blob/develop/assets/images/nord/repository-color-palettes.svg
+	## * https://github.com/arcticicestudio/nord
+	##
 
 	# theme
 	hc attr theme.tiling.reset 1
 	hc attr theme.floating.reset 1
-	hc set frame_border_active_color '#222222cc'
-	hc set frame_border_normal_color '#101010cc'
-	hc set frame_bg_active_color '#345F0Caa'
-	hc set frame_bg_normal_color '#565656aa'
+	hc set frame_border_active_color '#bf616a'
+	hc set frame_border_normal_color '#a3be8c'
+	hc set frame_bg_active_color '#bf616a'
+	hc set frame_bg_normal_color '#a3be8c'
 	hc set frame_border_width 0 ## 1
 	hc set always_show_frame on
 	hc set frame_bg_transparent on
@@ -30,27 +38,29 @@ main_theme_setting () {
 	#hc attr theme.title_font 'Dejavu Sans:pixelsize=12'  # example using Xft
 	# hc attr theme.title_font '-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
 	hc attr theme.padding_top 2  # space below the title's baseline (i.e. text depth)
-	hc attr theme.urgent.color '#7811A1dd'
-	hc attr theme.active.color '#345F0Cef'
-	hc attr theme.normal.color '#323232dd'
+	hc attr theme.urgent.color '#b48ead'
+	hc attr theme.active.color '#bf616a'
+	hc attr theme.normal.color '#a3be8c'
 	hc attr theme.title_color '#ffffff'
-	hc attr theme.normal.title_color '#898989'
+	hc attr theme.normal.title_color '#595959'
 	hc attr theme.inner_width 1
 	hc attr theme.inner_color black
 	hc attr theme.border_width 3
 	hc attr theme.floating.border_width 4
 	hc attr theme.floating.outer_width 1
 	hc attr theme.floating.outer_color black
-	hc attr theme.urgent.inner_color '#9A65B0'
-	hc attr theme.active.inner_color '#789161'
-	hc attr theme.normal.inner_color '#606060'
+	hc attr theme.urgent.inner_color '#b48ead'
+	hc attr theme.active.inner_color '#bf616a'
+	hc attr theme.normal.inner_color '#a3be8c'
 	# copy inner color to outer_color
 	for state in active urgent normal ; do
-	    hc substitute C theme.${state}.inner_color \
-	        attr theme.${state}.outer_color C
+		hc substitute C theme.${state}.inner_color \
+			attr theme.${state}.outer_color C
 	done
 	hc attr theme.active.outer_width 1
-	hc attr theme.background_color '#141414'
+	##hc attr theme.background_color '#141414'
+	#hc attr theme.background_color '#00000000'
+	hc attr theme.background_color '#666666'
 
 	hc set window_gap 8
 	hc set frame_padding 0
@@ -60,11 +70,11 @@ main_theme_setting () {
 
 }
 
-main_theme_frame_hide () {
+nord_aurora_theme_frame_hide () {
 	~/.config/herbstluftwm/bin/hlwm-frame-ctrl hide
 }
 
-main_theme_window_title_hide () {
+nord_aurora_theme_window_title_hide () {
 	~/.config/herbstluftwm/bin/hlwm-window-ctrl title_hide
 }
 
