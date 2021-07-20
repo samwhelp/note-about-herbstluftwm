@@ -27,50 +27,11 @@ source "$THE_SYS_EXT_DIR_PATH/init.sh"
 
 
 ################################################################################
-### Head: Theme
-##
-
-
-#source "$THE_SYS_PROFILE_DIR_PATH/default/theme.sh"
-#source "$THE_SYS_PROFILE_DIR_PATH/main/theme.sh"
-source "$THE_SYS_PROFILE_DIR_PATH/nord_aurora/theme.sh"
-
-
-##
-### Tail: Theme
-################################################################################
-
-
-################################################################################
-### Head: Keybind
-##
-
-#source "$THE_SYS_PROFILE_DIR_PATH/default/keybind.sh"
-#source "$THE_SYS_PROFILE_DIR_PATH/default_enhance/keybind.sh"
-source "$THE_SYS_PROFILE_DIR_PATH/main/keybind.sh"
-
-##
-### Tail: Keybind
-################################################################################
-
-
-################################################################################
-### Head: Rule
-##
-
-#source "$THE_SYS_PROFILE_DIR_PATH/default/rule.sh"
-source "$THE_SYS_PROFILE_DIR_PATH/main/rule.sh"
-
-##
-### Tail: Rule
-################################################################################
-
-
-################################################################################
 ### Head: Main
 ##
 
 __main__ () {
+	profile_run
 	skel_run
 }
 
