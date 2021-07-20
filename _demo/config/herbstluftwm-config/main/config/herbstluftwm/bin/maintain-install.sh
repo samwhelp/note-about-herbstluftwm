@@ -33,6 +33,9 @@ mod_install () {
 
 	mod_install_sys_profile_nord_aurora
 
+
+	mod_install_sys_cache_profile
+
 	mod_install_check
 
 }
@@ -155,6 +158,21 @@ mod_install_sys_profile_nord_aurora () {
 	#install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/nord_aurora/rule.sh" "$HOME/.config/herbstluftwm/sys/profile/nord_aurora/rule.sh"
 
 }
+
+
+mod_install_sys_cache_profile () {
+
+	echo "install -Dm644 $THE_SYS_CACHE_PROFILE_DIR_PATH/keybind.conf $HOME/.config/herbstluftwm/sys/cache/profile/keybind.conf"
+	install -Dm644 "$THE_SYS_CACHE_PROFILE_DIR_PATH/keybind.conf" "$HOME/.config/herbstluftwm/sys/cache/profile/keybind.conf"
+
+	echo "install -Dm644 $THE_SYS_CACHE_PROFILE_DIR_PATH/theme.conf $HOME/.config/herbstluftwm/sys/cache/profile/theme.conf"
+	install -Dm644 "$THE_SYS_CACHE_PROFILE_DIR_PATH/theme.conf" "$HOME/.config/herbstluftwm/sys/cache/profile/theme.conf"
+
+	echo "install -Dm644 $THE_SYS_CACHE_PROFILE_DIR_PATH/rule.conf $HOME/.config/herbstluftwm/sys/cache/profile/rule.conf"
+	install -Dm644 "$THE_SYS_CACHE_PROFILE_DIR_PATH/rule.conf" "$HOME/.config/herbstluftwm/sys/cache/profile/rule.conf"
+
+}
+
 
 mod_install_check () {
 	echo
