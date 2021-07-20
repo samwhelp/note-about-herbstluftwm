@@ -5,6 +5,9 @@
 ##
 
 skel_keybind () {
+
+	Mod="Mod1"
+
 	hc keybind $Mod-Shift-q quit
 	hc keybind $Mod-Shift-r reload
 	hc keybind $Mod-Shift-c close

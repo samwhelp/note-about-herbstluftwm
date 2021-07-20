@@ -71,6 +71,9 @@ mod_install_bin_ctrl () {
 	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-wallpaper-ctrl $HOME/.config/herbstluftwm/bin/hlwm-wallpaper-ctrl"
 	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-wallpaper-ctrl" "$HOME/.config/herbstluftwm/bin/hlwm-wallpaper-ctrl"
 
+	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-profile-ctrl $HOME/.config/herbstluftwm/bin/hlwm-profile-ctrl"
+	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-profile-ctrl" "$HOME/.config/herbstluftwm/bin/hlwm-profile-ctrl"
+
 }
 
 mod_install_ext () {
@@ -102,6 +105,9 @@ mod_install_sys_ext () {
 
 	echo "install -Dm644 $THE_SYS_EXT_DIR_PATH/profile.sh $HOME/.config/herbstluftwm/sys/ext/profile.sh"
 	install -Dm644 "$THE_SYS_EXT_DIR_PATH/profile.sh" "$HOME/.config/herbstluftwm/sys/ext/profile.sh"
+
+	echo "install -Dm644 $THE_SYS_EXT_DIR_PATH/hlwm.sh $HOME/.config/herbstluftwm/sys/ext/hlwm.sh"
+	install -Dm644 "$THE_SYS_EXT_DIR_PATH/hlwm.sh" "$HOME/.config/herbstluftwm/sys/ext/hlwm.sh"
 
 }
 

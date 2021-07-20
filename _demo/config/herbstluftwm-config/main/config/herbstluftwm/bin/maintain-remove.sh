@@ -71,6 +71,10 @@ mod_remove_bin_ctrl () {
 	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-wallpaper-ctrl"
 	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-wallpaper-ctrl"
 
+
+	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-profile-ctrl"
+	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-profile-ctrl"
+
 }
 
 mod_remove_ext () {
@@ -99,6 +103,9 @@ mod_remove_sys_ext () {
 
 	echo "rm -f $HOME/.config/herbstluftwm/sys/ext/profile.sh"
 	rm -f "$HOME/.config/herbstluftwm/sys/ext/profile.sh"
+
+	echo "rm -f $HOME/.config/herbstluftwm/sys/ext/hlwm.sh"
+	rm -f "$HOME/.config/herbstluftwm/sys/ext/hlwm.sh"
 }
 
 mod_remove_sys_profile_default () {
