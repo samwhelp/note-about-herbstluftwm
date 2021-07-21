@@ -1,6 +1,6 @@
 ---
 title: 安裝
-nav_order: 1000
+nav_order: 1010
 has_children: true
 ---
 

@@ -12,6 +12,7 @@
 ## 主題
 
 * [入門](#入門)
+* [安裝](#安裝)
 * [設定](#設定)
 * [設定範例](#設定範例)
 * [使用情境](#使用情境)
@@ -25,6 +26,12 @@
 | --- |
 | [入門](https://samwhelp.github.io/note-about-herbstluftwm/read/start.html) |
 
+
+### 安裝
+
+| 議題 |
+| --- |
+| [安裝Herbstluftwm](https://samwhelp.github.io/note-about-herbstluftwm/read/install.html) |
 
 ### 設定
 
