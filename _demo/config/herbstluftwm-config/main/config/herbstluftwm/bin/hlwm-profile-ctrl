@@ -379,8 +379,22 @@ Example:
 
 		$ $cmd_name wm_theme
 		$ $cmd_name wm_theme_default
+		$ $cmd_name wm_theme_favorite
 		$ $cmd_name wm_theme_help
 
+	## keybind
+
+		$ $cmd_name keybind
+		$ $cmd_name keybind_default
+		$ $cmd_name keybind_favorite
+		$ $cmd_name keybind_help
+
+	## rule
+
+		$ $cmd_name rule
+		$ $cmd_name rule_default
+		$ $cmd_name rule_favorite
+		$ $cmd_name rule_help
 
 Debug:
 	$ export DEBUG_HLWM=true
