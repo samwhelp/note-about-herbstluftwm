@@ -1,0 +1,20 @@
+##
+## ## Manjaro
+## /usr/local/share/bash-completion/completions/hlwm-wallpaper-ctrl
+## $ sudo install -Dm644 ./hlwm-wallpaper-ctrl /usr/local/share/bash-completion/completions/hlwm-wallpaper-ctrl
+##
+
+_hlwm_wallpaper_ctrl () {
+
+	local cur prev words cword
+	_init_completion || return
+
+	if [ "$cword" = "1" ]; then
+		local action_list=$(DEBUG_HLWM=false hlwm-wallpaper-ctrl self_actions)
+		COMPREPLY=( $( compgen -W "$action_list" -- "$cur" ) )
+	fi
+
+	return 0
+}
+
+complete -F _hlwm_wallpaper_ctrl hlwm-wallpaper-ctrl
