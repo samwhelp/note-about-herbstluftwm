@@ -34,7 +34,7 @@ mod_install () {
 	mod_install_sys_profile_nord_aurora
 
 
-	mod_install_sys_cache_profile
+	#mod_install_sys_cache_profile
 
 	mod_install_check
 
