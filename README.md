@@ -31,8 +31,8 @@
 | 議題 |
 | --- |
 | [設定檔路徑](https://samwhelp.github.io/note-about-herbstluftwm/read/config.html) |
-| [鍵盤按鍵綁定](https://samwhelp.github.io/note-about-herbstluftwm/read/config/keybind.html) |
-
+| [預設設定](https://samwhelp.github.io/note-about-herbstluftwm/read/config/default.html) |
+| [我的設定](https://samwhelp.github.io/note-about-herbstluftwm/read/config/main.html) |
 
 ### 設定範例
 
