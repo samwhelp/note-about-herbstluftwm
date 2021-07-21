@@ -16,14 +16,14 @@ grand_parent: 設定
 
 | Path | Title |
 | --- | --- |
-| /usr/share/xsessions/herbstluftwm.desktop | herbstluftwm |
-| /usr/bin/herbstluftwm | --- |
+| [/usr/share/xsessions/herbstluftwm.desktop](https://github.com/herbstluftwm/herbstluftwm/blob/master/share/herbstluftwm.desktop) | herbstluftwm |
+| [/usr/bin/herbstluftwm](https://herbstluftwm.org/herbstluftwm.html) | |
 
 ### Up
 
 | Path | Note |
 | --- | --- |
-| ~/.config/herbstluftwm/autostart | after exec herbstluftwm  |
+| [~/.config/herbstluftwm/autostart](https://github.com/samwhelp/note-about-herbstluftwm/blob/gh-pages/_demo/config/herbstluftwm-config/default/config/herbstluftwm/autostart) | after exec herbstluftwm  |
 
 
 ## 探索
