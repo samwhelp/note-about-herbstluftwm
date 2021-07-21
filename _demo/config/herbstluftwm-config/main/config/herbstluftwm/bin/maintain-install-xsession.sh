@@ -18,17 +18,17 @@ source "$THE_BASE_DIR_PATH/init.sh"
 ### Head: Model / Install
 ##
 
-mod_install () {
+mod_install_xsession () {
 
-	mod_install_xsession
+	mod_install_xsession_file
 
 
-	mod_install_check
+	mod_install_xsession_check
 }
 
 
 
-mod_install_xsession () {
+mod_install_xsession_file () {
 
 	echo "sudo install -Dm644 $THE_SHARE_DIR_PATH/xsession/herbstluftwm-session.desktop /usr/share/xsessions/herbstluftwm-session.desktop"
 	sudo install -Dm644 "$THE_SHARE_DIR_PATH/xsession/herbstluftwm-session.desktop" "/usr/share/xsessions/herbstluftwm-session.desktop"
@@ -43,7 +43,7 @@ mod_install_xsession () {
 
 
 
-mod_install_check () {
+mod_install_xsession_check () {
 
 	echo
 	ls /usr/share/xsessions/herbstluftwm-session.desktop -l
@@ -65,7 +65,7 @@ mod_install_check () {
 ##
 
 __main__ () {
-	mod_install "$@"
+	mod_install_xsession "$@"
 }
 
 __main__ "$@"
