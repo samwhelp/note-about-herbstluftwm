@@ -24,9 +24,9 @@ main_theme_setting () {
 	# theme
 	hc attr theme.tiling.reset 1
 	hc attr theme.floating.reset 1
-	hc set frame_border_active_color '#3b4252'
+	hc set frame_border_active_color '#bf616a'
 	hc set frame_border_normal_color '#2e3440'
-	hc set frame_bg_active_color '#3b4252'
+	hc set frame_bg_active_color '#bf616a'
 	hc set frame_bg_normal_color '#2e3440'
 	hc set frame_border_width 0 ## 1
 	hc set always_show_frame on
@@ -40,7 +40,7 @@ main_theme_setting () {
 	# hc attr theme.title_font '-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
 	hc attr theme.padding_top 2  # space below the title's baseline (i.e. text depth)
 	hc attr theme.urgent.color '#8fbcbb'
-	hc attr theme.active.color '#3b4252'
+	hc attr theme.active.color '#bf616a'
 	hc attr theme.normal.color '#2e3440'
 	hc attr theme.title_color '#bfbfbf'
 	hc attr theme.normal.title_color '#898989'
@@ -51,7 +51,7 @@ main_theme_setting () {
 	hc attr theme.floating.outer_width 1
 	hc attr theme.floating.outer_color black
 	hc attr theme.urgent.inner_color '#8fbcbb'
-	hc attr theme.active.inner_color '#4c566a'
+	hc attr theme.active.inner_color '#b54a55'
 	hc attr theme.normal.inner_color '#2e3440'
 	# copy inner color to outer_color
 	for state in active urgent normal ; do
