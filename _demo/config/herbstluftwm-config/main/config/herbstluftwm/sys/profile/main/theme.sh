@@ -42,7 +42,7 @@ main_theme_setting () {
 	hc attr theme.urgent.color '#8fbcbb'
 	hc attr theme.active.color '#bf616a'
 	hc attr theme.normal.color '#2e3440'
-	hc attr theme.title_color '#bfbfbf'
+	hc attr theme.title_color '#e1b7bb'
 	hc attr theme.normal.title_color '#898989'
 	hc attr theme.inner_width 1
 	hc attr theme.inner_color black
