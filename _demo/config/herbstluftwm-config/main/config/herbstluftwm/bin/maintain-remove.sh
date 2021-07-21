@@ -125,8 +125,8 @@ mod_remove_sys_profile_default_enhance () {
 	echo "rm -f $HOME/.config/herbstluftwm/sys/profile/default_enhance/keybind.sh"
 	rm -f "$HOME/.config/herbstluftwm/sys/profile/default_enhance/keybind.sh"
 
-	#echo "rm -f $HOME/.config/herbstluftwm/sys/profile/default_enhance/theme.sh"
-	#rm -f "$HOME/.config/herbstluftwm/sys/profile/default_enhance/theme.sh"
+	echo "rm -f $HOME/.config/herbstluftwm/sys/profile/default_enhance/theme.sh"
+	rm -f "$HOME/.config/herbstluftwm/sys/profile/default_enhance/theme.sh"
 
 	#echo "rm -f $HOME/.config/herbstluftwm/sys/profile/default_enhance/rule.sh"
 	#rm -f "$HOME/.config/herbstluftwm/sys/profile/default_enhance/rule.sh"
