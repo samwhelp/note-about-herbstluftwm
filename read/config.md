@@ -12,6 +12,12 @@ has_children: true
 * [/etc/xdg/herbstluftwm/autostart](https://github.com/herbstluftwm/herbstluftwm/blob/master/share/autostart)
 * ~/.config/herbstluftwm/autostart
 
+在「herbstluftwm」啟動後，會自動執行「~/.config/herbstluftwm/autostart」。
+
+所以可以將「/etc/xdg/herbstluftwm/autostart」這個檔案，
+
+複製到「~/.config/herbstluftwm/autostart」這個路徑，修改成自己想要的設定。
+
 
 ## 設定範例
 
