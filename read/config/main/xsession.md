@@ -53,3 +53,7 @@ Comment=Herbstluftwm Xsession
 Name[zh_TW]=Be Herbstluftwm
 Comment[zh_TW]=Herbstluftwm Xsession
 ```
+
+## 相關筆記
+
+* [xsession 簡易入門](https://samwhelp.github.io/note-about-xsession/)

@@ -44,3 +44,7 @@ Comment=Manual tiling window manager
 Exec=herbstluftwm --locked
 Type=Application
 ```
+
+## 相關筆記
+
+* [xsession 簡易入門](https://samwhelp.github.io/note-about-xsession/)
