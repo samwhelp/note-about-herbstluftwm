@@ -53,8 +53,8 @@ skel_keybind () {
 	hc keybind $Mod-Control-Right   resize right +$resizestep
 
 	# tags
-	tag_names=( {1..9} )
-	tag_keys=( {1..9} 0 )
+	tag_names=( {1..5} )
+	tag_keys=( {1..5} 0 )
 
 	hc rename default "${tag_names[0]}" || true
 	for i in "${!tag_names[@]}" ; do
