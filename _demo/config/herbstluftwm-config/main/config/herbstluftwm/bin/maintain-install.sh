@@ -43,6 +43,7 @@ mod_install () {
 
 
 mod_install_bin_up () {
+
 	echo "install -Dm755 $THE_PLAN_DIR_PATH/autostart $HOME/.config/herbstluftwm/autostart"
 	install -Dm755 "$THE_PLAN_DIR_PATH/autostart" "$HOME/.config/herbstluftwm/autostart"
 
@@ -60,6 +61,7 @@ mod_install_bin_up () {
 
 	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-up-applet $HOME/.config/herbstluftwm/bin/hlwm-up-applet"
 	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-up-applet" "$HOME/.config/herbstluftwm/bin/hlwm-up-applet"
+
 }
 
 mod_install_bin_ctrl () {

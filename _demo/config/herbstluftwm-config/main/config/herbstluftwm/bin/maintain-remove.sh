@@ -58,6 +58,7 @@ mod_remove_bin_up () {
 
 	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-up-applet"
 	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-up-applet"
+
 }
 
 mod_remove_bin_ctrl () {

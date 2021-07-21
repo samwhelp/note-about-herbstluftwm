@@ -34,13 +34,13 @@ __main__ () {
 	#PATH="$HOME/.config/herbstluftwm/bin:$PATH"
 	#echo $PATH > /tmp/log.txt
 
-	is_command_exist 'hlwm-wallpaper' && hlwm-wallpaper &
+	is_command_exist 'hlwm-up-wallpaper' && hlwm-up-wallpaper &
 
-	is_command_exist 'hlwm-compositor' && hlwm-compositor &
+	is_command_exist 'hlwm-up-compositor' && hlwm-up-compositor &
 
-	is_command_exist 'hlwm-panel' && hlwm-panel &
+	is_command_exist 'hlwm-up-panel' && hlwm-up-panel &
 
-	is_command_exist 'hlwm-applet' && hlwm-applet &
+	is_command_exist 'hlwm-up-applet' && hlwm-up-applet &
 
 }
 
