@@ -59,7 +59,8 @@ PATH="$HOME/.config/herbstluftwm/bin:$PATH"
 #LANG=zh_TW.UTF-8 LANGUAGE=zh_TW.UTF-8 LC_ALL=zh_TW.UTF-8 exec herbstluftwm
 #LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8 exec herbstluftwm
 
-exec herbstluftwm
+#exec herbstluftwm
+exec herbstluftwm --locked
 
 ##
 ### Tail: Window Manager

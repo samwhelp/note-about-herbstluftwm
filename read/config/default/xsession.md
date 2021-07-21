@@ -16,8 +16,7 @@ grand_parent: 設定
 
 | Path | Title |
 | --- | --- |
-| /usr/share/xsessions/herbstluftwm-session.desktop | Be Herbstluftwm |
-| /usr/local/bin/herbstluftwm-session.sh | --- |
+| /usr/share/xsessions/herbstluftwm.desktop | herbstluftwm |
 | /usr/bin/herbstluftwm | --- |
 
 ### Up
@@ -25,8 +24,23 @@ grand_parent: 設定
 | Path | Note |
 | --- | --- |
 | ~/.config/herbstluftwm/autostart | after exec herbstluftwm  |
-| ~/.config/herbstluftwm/bin/hlwm-up | start all component |
-| ~/.config/herbstluftwm/bin/hlwm-up-wallpaper | feh |
-| ~/.config/herbstluftwm/bin/hlwm-up-compositor | picom |
-| ~/.config/herbstluftwm/bin/hlwm-up-panel | polybar |
-| ~/.config/herbstluftwm/bin/hlwm-up-applet | system tray / applet |
+
+
+## 探索
+
+執行
+
+``` sh
+cat /usr/share/xsessions/herbstluftwm.desktop
+```
+
+顯示
+
+```
+[Desktop Entry]
+Encoding=UTF-8
+Name=herbstluftwm
+Comment=Manual tiling window manager
+Exec=herbstluftwm --locked
+Type=Application
+```

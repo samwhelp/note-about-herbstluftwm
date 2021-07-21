@@ -30,3 +30,26 @@ grand_parent: 設定
 | ~/.config/herbstluftwm/bin/hlwm-up-compositor | picom |
 | ~/.config/herbstluftwm/bin/hlwm-up-panel | polybar |
 | ~/.config/herbstluftwm/bin/hlwm-up-applet | system tray / applet |
+
+
+## 探索
+
+執行
+
+``` sh
+cat /usr/share/xsessions/herbstluftwm-session.desktop
+```
+
+顯示
+
+```
+[Desktop Entry]
+Type=XSession
+Exec=/usr/local/bin/herbstluftwm-session.sh
+TryExec=/usr/local/bin/herbstluftwm-session.sh
+Name=Be Herbstluftwm
+Comment=Herbstluftwm Xsession
+
+Name[zh_TW]=Be Herbstluftwm
+Comment[zh_TW]=Herbstluftwm Xsession
+```
