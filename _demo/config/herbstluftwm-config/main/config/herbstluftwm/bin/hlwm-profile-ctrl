@@ -319,7 +319,6 @@ sub_run_self_actions () {
 	util_self_actions "$@"
 }
 
-
 ##
 ### Tail: SubCmd / self_actions
 ################################################################################
@@ -441,7 +440,7 @@ main_run_sub_cmd () {
 }
 
 ## Start
-cmd_var_init
+cmd_var_init "$@"
 
 main_check_args_size $# "$@"
 
