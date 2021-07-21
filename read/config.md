@@ -15,11 +15,10 @@ has_children: true
 
 ## 設定範例
 
-
-| 設定範例 |
-| --- |
-| [default](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/default) |
-| [basic](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/basic) |
-| [advance](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/advance) |
-| [enhance](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/enhance) |
-| [main](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/main) |
+| 設定範例 | 備註 |
+| --- | --- |
+| [default](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/default) | Herbstluftwm 預設 |
+| [prototype_basic](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/prototype_basic) | 架構原型 |
+| [prototype_advance](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/prototype_advance) | 架構原型 |
+| [prototype_enhance](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/prototype_enhance) | 架構原型 |
+| [main](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/main) | 我的設定架構 |
