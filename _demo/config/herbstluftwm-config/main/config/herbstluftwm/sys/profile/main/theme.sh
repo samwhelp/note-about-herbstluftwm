@@ -13,7 +13,8 @@ skel_theme () {
 main_theme_setting () {
 
 	##
-	## ## Polar Night
+	## ## nordtheme
+	## * https://www.w3schools.com/colors/colors_picker.asp
 	## * https://www.nordtheme.com/
 	## * https://www.nordtheme.com/docs/colors-and-palettes
 	## * https://github.com/arcticicestudio/nord-docs/
