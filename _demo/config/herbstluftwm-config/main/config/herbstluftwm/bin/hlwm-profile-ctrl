@@ -18,7 +18,7 @@ source "$THE_SYS_EXT_DIR_PATH/init.sh"
 ### Head: Init / Cmd
 ##
 
-base_var_init_cmd () {
+cmd_var_init () {
 
 	THE_CMD_VERSION='0.1'
 
@@ -427,7 +427,7 @@ main_run_sub_cmd () {
 }
 
 ## Start
-base_var_init_cmd
+cmd_var_init
 
 main_check_args_size $# "$@"
 
