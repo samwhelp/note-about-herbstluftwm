@@ -34,7 +34,10 @@ profile_keybind_apply () {
 	local keybind=$(sys_profile_keybind_config_load)
 
 	if sys_profile_keybind_source_load "$keybind"; then
-		is_function_exist skel_keybind && skel_keybind
+		if is_function_exist skel_keybind; then
+			hc keyunbind --all
+			skel_keybind
+		fi
 		return 0
 	fi
 
