@@ -38,30 +38,6 @@ cmd_var_init () {
 
 
 ################################################################################
-### Head: Util / Wallpaper
-##
-
-util_wallpaper_init_remember_display_file () {
-	mkdir -p "$THE_SYS_CACHE_DIR_PATH/wallpaper"
-	touch "$THE_SYS_CACHE_DIR_PATH/wallpaper/display"
-}
-
-util_wallpaper_set_display_mode () {
-	util_wallpaper_init_remember_display_file
-	echo "$1" > "$THE_SYS_CACHE_DIR_PATH/wallpaper/display"
-}
-
-util_wallpaper_get_display_mode () {
-	util_wallpaper_init_remember_display_file
-	cat "$THE_SYS_CACHE_DIR_PATH/wallpaper/display"
-}
-
-##
-### Tail: Util / Wallpaper
-################################################################################
-
-
-################################################################################
 ### Head: Model / Wallpaper
 ##
 
