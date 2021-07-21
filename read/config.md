@@ -17,7 +17,7 @@ has_children: true
 
 | 設定範例 | 備註 |
 | --- | --- |
-| [default](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/default) | [Herbstluftwm 預設設定架構](#herbstluftwm 預設設定架構) |
+| [default](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/default) | [Herbstluftwm 預設設定架構](#herbstluftwm-預設設定架構) |
 | [prototype_basic](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/prototype_basic) | 設定架構原型 |
 | [prototype_advance](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/prototype_advance) | 設定架構原型 |
 | [prototype_enhance](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/prototype_enhance) | 設定架構原型 |
