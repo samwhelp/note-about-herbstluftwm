@@ -12,3 +12,11 @@
 ## Link
 
 * [Herbstluftwm](https://herbstluftwm.org/) ([GitHub](https://github.com/herbstluftwm/herbstluftwm))
+
+
+## Doc
+
+| Subject |
+| --- |
+| [keybind](config/herbstluftwm/share/doc/spec-keybind.md) |
+| [xsession](config/herbstluftwm/share/doc/spec-xsession.md) |
