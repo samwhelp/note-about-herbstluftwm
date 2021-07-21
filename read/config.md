@@ -9,8 +9,10 @@ has_children: true
 
 ## 設定檔路徑
 
-* [/etc/xdg/herbstluftwm/autostart](https://github.com/herbstluftwm/herbstluftwm/blob/master/share/autostart)
-* ~/.config/herbstluftwm/autostart
+| 路徑 | 備註 |
+| --- | --- |
+| [/etc/xdg/herbstluftwm/autostart](https://github.com/herbstluftwm/herbstluftwm/blob/master/share/autostart) | 預設安裝 |
+| ~/.config/herbstluftwm/autostart | 客製修改 |
 
 在「herbstluftwm」啟動後，會自動執行「~/.config/herbstluftwm/autostart」。
 
