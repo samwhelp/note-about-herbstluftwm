@@ -14,6 +14,7 @@ nord_aurora_theme_setting () {
 
 	##
 	## ## Aurora
+	## * https://www.nordtheme.com/
 	## * https://www.nordtheme.com/docs/colors-and-palettes
 	## * https://github.com/arcticicestudio/nord-docs/
 	## * https://github.com/arcticicestudio/nord-docs/blob/develop/assets/images/nord/repository-color-palettes.svg
