@@ -20,7 +20,7 @@ source "$THE_BASE_DIR_PATH/init.sh"
 
 mod_remove () {
 
-	mod_remove_bin
+	mod_remove_bin_up
 	mod_remove_bin_ctrl
 	mod_remove_ext
 
@@ -39,7 +39,7 @@ mod_remove () {
 
 }
 
-mod_remove_bin () {
+mod_remove_bin_up () {
 
 	echo "rm -f  $HOME/.config/herbstluftwm/autostart"
 	rm -f "$HOME/.config/herbstluftwm/autostart"
@@ -47,17 +47,17 @@ mod_remove_bin () {
 	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-up"
 	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-up"
 
-	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-wallpaper"
-	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-wallpaper"
+	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-up-wallpaper"
+	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-up-wallpaper"
 
-	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-compositor"
-	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-compositor"
+	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-up-compositor"
+	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-up-compositor"
 
-	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-panel"
-	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-panel"
+	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-up-panel"
+	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-up-panel"
 
-	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-applet"
-	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-applet"
+	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-up-applet"
+	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-up-applet"
 }
 
 mod_remove_bin_ctrl () {

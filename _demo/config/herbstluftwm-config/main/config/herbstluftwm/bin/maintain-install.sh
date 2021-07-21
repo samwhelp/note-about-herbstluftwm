@@ -20,7 +20,7 @@ source "$THE_BASE_DIR_PATH/init.sh"
 
 mod_install () {
 
-	mod_install_bin
+	mod_install_bin_up
 	mod_install_bin_ctrl
 	mod_install_ext
 
@@ -42,24 +42,24 @@ mod_install () {
 }
 
 
-mod_install_bin () {
+mod_install_bin_up () {
 	echo "install -Dm755 $THE_PLAN_DIR_PATH/autostart $HOME/.config/herbstluftwm/autostart"
 	install -Dm755 "$THE_PLAN_DIR_PATH/autostart" "$HOME/.config/herbstluftwm/autostart"
 
 	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-up $HOME/.config/herbstluftwm/bin/hlwm-up"
 	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-up" "$HOME/.config/herbstluftwm/bin/hlwm-up"
 
-	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-wallpaper $HOME/.config/herbstluftwm/bin/hlwm-wallpaper"
-	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-wallpaper" "$HOME/.config/herbstluftwm/bin/hlwm-wallpaper"
+	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-up-wallpaper $HOME/.config/herbstluftwm/bin/hlwm-up-wallpaper"
+	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-up-wallpaper" "$HOME/.config/herbstluftwm/bin/hlwm-up-wallpaper"
 
-	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-compositor $HOME/.config/herbstluftwm/bin/hlwm-compositor"
-	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-compositor" "$HOME/.config/herbstluftwm/bin/hlwm-compositor"
+	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-up-compositor $HOME/.config/herbstluftwm/bin/hlwm-up-compositor"
+	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-up-compositor" "$HOME/.config/herbstluftwm/bin/hlwm-up-compositor"
 
-	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-panel $HOME/.config/herbstluftwm/bin/hlwm-panel"
-	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-panel" "$HOME/.config/herbstluftwm/bin/hlwm-panel"
+	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-up-panel $HOME/.config/herbstluftwm/bin/hlwm-up-panel"
+	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-up-panel" "$HOME/.config/herbstluftwm/bin/hlwm-up-panel"
 
-	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-applet $HOME/.config/herbstluftwm/bin/hlwm-applet"
-	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-applet" "$HOME/.config/herbstluftwm/bin/hlwm-applet"
+	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-up-applet $HOME/.config/herbstluftwm/bin/hlwm-up-applet"
+	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-up-applet" "$HOME/.config/herbstluftwm/bin/hlwm-up-applet"
 }
 
 mod_install_bin_ctrl () {

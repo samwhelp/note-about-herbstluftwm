@@ -5,5 +5,5 @@ TryExec=/usr/local/bin/herbstluftwm-session.sh
 Name=Be Herbstluftwm
 Comment=Herbstluftwm Xsession
 
-Name[zh_TW]=Be Spectrwm
-Comment[zh_TW]=Spectrwm Xsession
+Name[zh_TW]=Be Herbstluftwm
+Comment[zh_TW]=Herbstluftwm Xsession
