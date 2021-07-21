@@ -9,7 +9,7 @@ parent: 設定
 
 ## 設定檔專案
 
-* [main](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/default/config/herbstluftwm)
+* [default](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/default/config/herbstluftwm)
 
 
 ## Herbstluftwm 預設設定架構
