@@ -5,12 +5,12 @@
 ##
 
 skel_theme () {
-	nord_main_theme_setting
-	nord_main_theme_frame_hide
-	nord_main_theme_window_title_hide
+	nord_polar_night_theme_setting
+	nord_polar_night_theme_frame_hide
+	nord_polar_night_theme_window_title_hide
 }
 
-nord_main_theme_setting () {
+nord_polar_night_theme_setting () {
 
 	##
 	## ## Polar Night
@@ -71,11 +71,11 @@ nord_main_theme_setting () {
 
 }
 
-nord_main_theme_frame_hide () {
+nord_polar_night_theme_frame_hide () {
 	~/.config/herbstluftwm/bin/hlwm-frame-ctrl hide
 }
 
-nord_main_theme_window_title_hide () {
+nord_polar_night_theme_window_title_hide () {
 	~/.config/herbstluftwm/bin/hlwm-window-ctrl title_hide
 }
 

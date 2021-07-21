@@ -32,6 +32,7 @@ mod_install () {
 	mod_install_sys_profile_main
 
 	mod_install_sys_profile_nord_aurora
+	mod_install_sys_profile_nord_polar_night
 	mod_install_sys_profile_gruvbox
 
 
@@ -166,6 +167,19 @@ mod_install_sys_profile_nord_aurora () {
 
 	#echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/nord_aurora/rule.sh $HOME/.config/herbstluftwm/sys/profile/nord_aurora/rule.sh"
 	#install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/nord_aurora/rule.sh" "$HOME/.config/herbstluftwm/sys/profile/nord_aurora/rule.sh"
+
+}
+
+mod_install_sys_profile_nord_polar_night () {
+
+	#echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/nord_polar_night/keybind.sh $HOME/.config/herbstluftwm/sys/profile/nord_polar_night/keybind.sh"
+	#install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/nord_polar_night/keybind.sh" "$HOME/.config/herbstluftwm/sys/profile/nord_polar_night/keybind.sh"
+
+	echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/nord_polar_night/theme.sh $HOME/.config/herbstluftwm/sys/profile/nord_polar_night/theme.sh"
+	install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/nord_polar_night/theme.sh" "$HOME/.config/herbstluftwm/sys/profile/nord_polar_night/theme.sh"
+
+	#echo "install -Dm644 $THE_SYS_PROFILE_DIR_PATH/nord_polar_night/rule.sh $HOME/.config/herbstluftwm/sys/profile/nord_polar_night/rule.sh"
+	#install -Dm644 "$THE_SYS_PROFILE_DIR_PATH/nord_polar_night/rule.sh" "$HOME/.config/herbstluftwm/sys/profile/nord_polar_night/rule.sh"
 
 }
 

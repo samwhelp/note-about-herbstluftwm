@@ -32,6 +32,7 @@ mod_remove () {
 	mod_remove_sys_profile_main
 
 	mod_remove_sys_profile_nord_aurora
+	mod_remove_sys_profile_nord_polar_night
 	mod_remove_sys_profile_gruvbox
 
 	##mod_remove_sys_cache_profile
@@ -153,6 +154,17 @@ mod_remove_sys_profile_nord_aurora () {
 
 	#echo "rm -f $HOME/.config/herbstluftwm/sys/profile/nord_aurora/rule.sh"
 	#rm -f "$HOME/.config/herbstluftwm/sys/profile/nord_aurora/rule.sh"
+}
+
+mod_remove_sys_profile_nord_polar_night () {
+	#echo "rm -f $HOME/.config/herbstluftwm/sys/profile/nord_polar_night/keybind.sh"
+	#rm -f "$HOME/.config/herbstluftwm/sys/profile/nord_polar_night/keybind.sh"
+
+	echo "rm -f $HOME/.config/herbstluftwm/sys/profile/nord_polar_night/theme.sh"
+	rm -f "$HOME/.config/herbstluftwm/sys/profile/nord_polar_night/theme.sh"
+
+	#echo "rm -f $HOME/.config/herbstluftwm/sys/profile/nord_polar_night/rule.sh"
+	#rm -f "$HOME/.config/herbstluftwm/sys/profile/nord_polar_night/rule.sh"
 }
 
 mod_remove_sys_profile_gruvbox () {
