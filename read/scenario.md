@@ -9,7 +9,7 @@ has_children: true
 
 ## 設定檔
 
-採用「客製的設定檔」，
+採用「[客製的設定檔](https://samwhelp.github.io/note-about-herbstluftwm/read/config/main.html)」，
 
 請參考「[我的設定](https://github.com/samwhelp/note-about-herbstluftwm/tree/gh-pages/_demo/config/herbstluftwm-config/main/config/herbstluftwm)」。
 

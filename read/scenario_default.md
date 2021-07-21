@@ -9,7 +9,7 @@ has_children: true
 
 ## 設定檔
 
-採用「預設的設定檔」。
+採用「[預設的設定檔](https://samwhelp.github.io/note-about-herbstluftwm/read/config/default.html)」。
 
 將「[/etc/xdg/herbstluftwm/autostart](https://github.com/herbstluftwm/herbstluftwm/blob/master/share/autostart)」這個檔案，
 

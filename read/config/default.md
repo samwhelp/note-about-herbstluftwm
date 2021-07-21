@@ -17,3 +17,8 @@ parent: 設定
 | 主題 | 備註 |
 | --- | --- |
 | [xsession](default/xsession) | 登入啟動流程 |
+
+
+## 按鍵綁定
+
+請參考「[使用情境(預設)](https://samwhelp.github.io/note-about-herbstluftwm/read/scenario_default.html)」該篇的整理

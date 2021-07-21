@@ -58,3 +58,5 @@
 | 工具 | 指令 | 功能 |
 | --- | --- | --- |
 | [wallpaper-select-feh](https://samwhelp.github.io/note-about-fzf/read/project/wallpaper-select/wallpaper-select-feh) | `wallpaper-select-feh fzf` | 設定桌面圖片 |
+
+另外我「[客製的設定](https://samwhelp.github.io/note-about-herbstluftwm/read/config/main.html)」，也有其他的[輔助工具](https://samwhelp.github.io/note-about-herbstluftwm/read/config/main/tool.html)可供使用。
