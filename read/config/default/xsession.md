@@ -10,7 +10,7 @@ grand_parent: 設定
 # Herbstluftwm / Xsession
 
 
-## Login Process
+## 登入流程
 
 ### Start
 

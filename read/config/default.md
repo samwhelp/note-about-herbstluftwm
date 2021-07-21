@@ -1,7 +1,7 @@
 ---
 title: 預設設定
 nav_order: 2021
-has_children: false
+has_children: true
 parent: 設定
 ---
 
