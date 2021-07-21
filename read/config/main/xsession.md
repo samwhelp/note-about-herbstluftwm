@@ -1,5 +1,5 @@
 ---
-title: Herbstluftwm / Xsession
+title: Xsession
 nav_order: 5022
 has_children: false
 parent: 我的設定
@@ -7,7 +7,7 @@ grand_parent: 設定
 ---
 
 
-# Herbstluftwm / Xsession
+# Xsession
 
 
 ## 登入流程
