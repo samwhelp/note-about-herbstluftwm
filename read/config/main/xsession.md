@@ -30,7 +30,7 @@ grand_parent: 設定
 | [~/.config/herbstluftwm/bin/hlwm-up-compositor](https://github.com/samwhelp/note-about-herbstluftwm/blob/gh-pages/_demo/config/herbstluftwm-config/main/config/herbstluftwm/bin/hlwm-up-compositor) | picom |
 | [~/.config/herbstluftwm/bin/hlwm-up-panel](https://github.com/samwhelp/note-about-herbstluftwm/blob/gh-pages/_demo/config/herbstluftwm-config/main/config/herbstluftwm/bin/hlwm-up-panel) | polybar |
 | [~/.config/herbstluftwm/bin/hlwm-up-applet](https://github.com/samwhelp/note-about-herbstluftwm/blob/gh-pages/_demo/config/herbstluftwm-config/main/config/herbstluftwm/bin/hlwm-up-applet) | system tray / applet |
-
+| [~/.config/herbstluftwm/bin/hlwm-up-xsettings](https://github.com/samwhelp/note-about-herbstluftwm/blob/gh-pages/_demo/config/herbstluftwm-config/main/config/herbstluftwm/bin/hlwm-up-xsettings) | xsettings daemon |
 
 ## 探索
 
