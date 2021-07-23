@@ -237,6 +237,9 @@ mod_install_style_dir () {
 
 mod_install_share_style_profile_main () {
 
+	echo "install -Dm644 $THE_SHARE_DIR_PATH/style-profile/main/picom/picom.conf $HOME/.config/herbstluftwm/share/style-profile/main/picom/picom.conf"
+	install -Dm644 "$THE_SHARE_DIR_PATH/style-profile/main/picom/picom.conf" "$HOME/.config/herbstluftwm/share/style-profile/main/picom/picom.conf"
+
 	echo "install -Dm644 $THE_SHARE_DIR_PATH/style-profile/main/xsettingsd/xsettingsd.conf $HOME/.config/herbstluftwm/share/style-profile/main/xsettingsd/xsettingsd.conf"
 	install -Dm644 "$THE_SHARE_DIR_PATH/style-profile/main/xsettingsd/xsettingsd.conf" "$HOME/.config/herbstluftwm/share/style-profile/main/xsettingsd/xsettingsd.conf"
 

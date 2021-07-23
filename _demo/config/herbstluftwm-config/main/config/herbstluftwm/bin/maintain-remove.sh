@@ -210,6 +210,9 @@ mod_remove_style_dir () {
 
 mod_remove_share_style_profile_main () {
 
+	echo "rm -f $HOME/.config/herbstluftwm/share/style-profile/main/picom/picom.conf"
+	rm -f "$HOME/.config/herbstluftwm/share/style-profile/main/picom/picom.conf"
+
 	echo "rm -f $HOME/.config/herbstluftwm/share/style-profile/main/xsettingsd/xsettingsd.conf"
 	rm -f "$HOME/.config/herbstluftwm/share/style-profile/main/xsettingsd/xsettingsd.conf"
 
