@@ -89,6 +89,8 @@ base_var_init () {
 
 	THE_STYLE_POLYBAR_CONFIG_FILE_PATH="$THE_STYLE_DIR_PATH/polybar/config"
 
+	THE_STYLE_XSETTINGSD_CONFIG_FILE_PATH="$THE_STYLE_DIR_PATH/xsettingsd/xsettingsd.conf"
+
 }
 
 
@@ -142,6 +144,7 @@ base_var_dump () {
 
 	util_debug_echo "THE_STYLE_POLYBAR_CONFIG_FILE_PATH=$THE_STYLE_POLYBAR_CONFIG_FILE_PATH"
 
+	util_debug_echo "THE_STYLE_XSETTINGSD_CONFIG_FILE_PATH=$THE_STYLE_XSETTINGSD_CONFIG_FILE_PATH"
 
 
 	util_debug_echo

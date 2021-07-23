@@ -38,6 +38,9 @@ mod_install () {
 
 	#mod_install_sys_cache_profile
 
+	mod_install_style_dir
+	mod_install_share_style_profile_main
+
 	mod_install_check
 
 
@@ -51,6 +54,9 @@ mod_install_bin_up () {
 
 	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-up $HOME/.config/herbstluftwm/bin/hlwm-up"
 	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-up" "$HOME/.config/herbstluftwm/bin/hlwm-up"
+
+	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-up-xsettings $HOME/.config/herbstluftwm/bin/hlwm-up-xsettings"
+	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-up-xsettings" "$HOME/.config/herbstluftwm/bin/hlwm-up-xsettings"
 
 	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-up-wallpaper $HOME/.config/herbstluftwm/bin/hlwm-up-wallpaper"
 	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-up-wallpaper" "$HOME/.config/herbstluftwm/bin/hlwm-up-wallpaper"
@@ -209,6 +215,35 @@ mod_install_sys_cache_profile () {
 	install -Dm644 "$THE_SYS_CACHE_PROFILE_DIR_PATH/rule.conf" "$HOME/.config/herbstluftwm/sys/cache/profile/rule.conf"
 
 }
+
+mod_install_style_dir () {
+
+	if [ -a "$HOME/.config/herbstluftwm/style" ]; then
+		return
+	fi
+
+	echo "cd $HOME/.config/herbstluftwm"
+	cd "$HOME/.config/herbstluftwm"
+
+	echo "ln -sf share/style-profile/main style"
+
+	ln -sf share/style-profile/main style
+
+	## man cd
+	echo "cd $OLDPWD"
+	cd "$OLDPWD"
+
+}
+
+mod_install_share_style_profile_main () {
+
+	echo "install -Dm644 $THE_SHARE_DIR_PATH/style-profile/main/xsettingsd/xsettingsd.conf $HOME/.config/herbstluftwm/share/style-profile/main/xsettingsd/xsettingsd.conf"
+	install -Dm644 "$THE_SHARE_DIR_PATH/style-profile/main/xsettingsd/xsettingsd.conf" "$HOME/.config/herbstluftwm/share/style-profile/main/xsettingsd/xsettingsd.conf"
+
+
+}
+
+"$THE_STYLE_XSETTINGSD_CONFIG_FILE_PATH"
 
 
 mod_install_check () {

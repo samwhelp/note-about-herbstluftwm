@@ -37,6 +37,9 @@ mod_remove () {
 
 	##mod_remove_sys_cache_profile
 
+	#mod_remove_style_dir
+	mod_remove_share_style_profile_main
+
 	mod_remove_check
 
 }
@@ -48,6 +51,9 @@ mod_remove_bin_up () {
 
 	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-up"
 	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-up"
+
+	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-up-xsettings"
+	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-up-xsettings"
 
 	echo "rm -f $HOME/.config/herbstluftwm/bin/hlwm-up-wallpaper"
 	rm -f "$HOME/.config/herbstluftwm/bin/hlwm-up-wallpaper"
@@ -180,6 +186,7 @@ mod_remove_sys_profile_gruvbox () {
 
 
 mod_remove_sys_cache_profile () {
+
 	echo "rm -f $HOME/.config/herbstluftwm/sys/cache/profile/keybind.conf"
 	rm -f "$HOME/.config/herbstluftwm/sys/cache/profile/keybind.conf"
 
@@ -190,6 +197,27 @@ mod_remove_sys_cache_profile () {
 	rm -f "$HOME/.config/herbstluftwm/sys/cache/profile/rule.conf"
 
 }
+
+mod_remove_style_dir () {
+
+	if [ -L "$HOME/.config/herbstluftwm/style" ]; then
+		echo "rm $HOME/.config/herbstluftwm/style"
+		rm "$HOME/.config/herbstluftwm/style"
+		return
+	fi
+
+}
+
+mod_remove_share_style_profile_main () {
+
+	echo "rm -f $HOME/.config/herbstluftwm/share/style-profile/main/xsettingsd/xsettingsd.conf"
+	rm -f "$HOME/.config/herbstluftwm/share/style-profile/main/xsettingsd/xsettingsd.conf"
+
+}
+
+
+
+
 
 mod_remove_check () {
 	echo
