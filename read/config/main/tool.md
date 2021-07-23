@@ -25,7 +25,7 @@ grand_parent: 設定
 
 | 工具 | 按鍵綁定 | 備註 |
 | --- | --- | --- |
-| [hlwm-profile-ctrl](https://github.com/samwhelp/note-about-herbstluftwm/blob/gh-pages/_demo/config/herbstluftwm-config/main/config/herbstluftwm/bin/hlwm-profile-ctrl) | 無 | 用來更改「wm_theme」「theme」「rule」 |
+| [hlwm-profile-ctrl](https://github.com/samwhelp/note-about-herbstluftwm/blob/gh-pages/_demo/config/herbstluftwm-config/main/config/herbstluftwm/bin/hlwm-profile-ctrl) | 無 | 用來更改「theme」「keybind」「rule」 |
 | [hlwm-frame-ctrl](https://github.com/samwhelp/note-about-herbstluftwm/blob/gh-pages/_demo/config/herbstluftwm-config/main/config/herbstluftwm/bin/hlwm-frame-ctrl) | [有](https://samwhelp.github.io/note-about-herbstluftwm/read/scenario/main/layout-control.html#frame%E9%A1%AF%E7%A4%BA) | 用來切換「frame」顯示或隱藏 |
 | [hlwm-window-ctrl](https://github.com/samwhelp/note-about-herbstluftwm/blob/gh-pages/_demo/config/herbstluftwm-config/main/config/herbstluftwm/bin/hlwm-window-ctrl) | [有](https://samwhelp.github.io/note-about-herbstluftwm/read/scenario/main/window-control.html#視窗標題顯示) | 用來切換「視窗標題」是否顯示 |
 | [hlwm-wallpaper-ctrl](https://github.com/samwhelp/note-about-herbstluftwm/blob/gh-pages/_demo/config/herbstluftwm-config/main/config/herbstluftwm/bin/hlwm-up-wallpaper) | [有](https://samwhelp.github.io/note-about-herbstluftwm/read/scenario/main/wallpaper-control.html) | 用來切換桌面圖片 |
