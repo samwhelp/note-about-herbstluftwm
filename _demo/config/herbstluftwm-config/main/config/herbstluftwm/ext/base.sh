@@ -26,7 +26,7 @@ util_error_echo () {
 ## THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "$0")" ; pwd)"
 
 find_dir_path () {
-	if [ ! -d $(dirname -- "$1") ]; then
+	if ! [ -d "$(dirname -- "$1")" ]; then
 		dirname -- "$1"
 		return 1
 	fi
@@ -51,7 +51,7 @@ is_not_debug () {
 base_var_init () {
 
 
-	THE_PLAN_DIR_PATH=$(find_dir_path "$THE_BASE_DIR_PATH/../.")
+	THE_PLAN_DIR_PATH="$(find_dir_path "$THE_BASE_DIR_PATH/../.")"
 
 
 	THE_BIN_DIR_NAME="bin"
