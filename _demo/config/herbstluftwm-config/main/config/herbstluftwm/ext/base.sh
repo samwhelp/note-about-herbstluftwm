@@ -33,7 +33,7 @@ find_dir_path () {
 	echo "$(cd -- "$(dirname -- "$1")" ; pwd)"
 }
 
-##THIS_BASE_DIR_PATH="$(find_dir_path "$0")"
+## THIS_BASE_DIR_PATH="$(find_dir_path "$0")"
 
 ## $ export DEBUG_HLWM=true
 is_debug () {
