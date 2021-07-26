@@ -65,5 +65,9 @@
 | 工具 | 指令 | 功能 |
 | --- | --- | --- |
 | [wallpaper-select-feh](https://samwhelp.github.io/note-about-fzf/read/project/wallpaper-select/wallpaper-select-feh) | `wallpaper-select-feh fzf` | 設定桌面圖片 |
+| [xfteditor](https://samwhelp.github.io/tool-xfteditor/read/project/xfteditor/) | `xfted file_path` | 輔助「檔案管理器」，右鍵開啟檔案到「xfce-terminal」的「新頁籤(Tab)」 |
+
+
+
 
 另外我「[客製的設定](https://samwhelp.github.io/note-about-herbstluftwm/read/config/main.html)」，也有其他的[輔助工具](https://samwhelp.github.io/note-about-herbstluftwm/read/config/main/tool.html)可供使用。
