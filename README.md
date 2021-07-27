@@ -16,8 +16,8 @@
 * [設定](#設定)
 * [設定範例](#設定範例)
 * [使用情境](#使用情境)
+* [專案](#專案)
 * [輔助工具](#輔助工具)
-
 
 
 ### 入門
@@ -58,6 +58,13 @@
 | --- |
 | [預設](https://samwhelp.github.io/note-about-herbstluftwm/read/scenario_default.html) |
 | [客製](https://samwhelp.github.io/note-about-herbstluftwm/read/scenario.html) |
+
+### 專案
+
+| 工具 | 簡介 |
+| --- | --- |
+| [herbstluftwmrc-get](https://samwhelp.github.io/note-about-herbstluftwm/read/project/herbstluftwmrc-profile/herbstluftwmrc-get.html) | 用來輔助「安裝」herbstluftwm config |
+| [herbstluftwmrc-ctrl](https://samwhelp.github.io/note-about-herbstluftwm/read/project/herbstluftwmrc-profile/herbstluftwmrc-ctrl.html) | 用來輔助「切換」herbstluftwm config |
 
 
 ### 輔助工具
