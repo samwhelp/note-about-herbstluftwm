@@ -794,22 +794,14 @@ mod_herbstluftwmrc_profile_set () {
 
 herbstluftwmrc_profile_install () {
 
-	## $ herbstluftwmrc-ctrl install demo https://github.com/conformal/herbstluftwm.git
+	## $ bspwmrc-ctrl install demo https://github.com/samwhelp/note-about-herbstluftwm.git
 
 	local name="$1"
 	local repo_url="$2"
 
-	util_error_echo "mkdir -p $THE_HERBSTLUFTWMRC_PROFILE_DIR_PATH"
-	mkdir -p "$THE_HERBSTLUFTWMRC_PROFILE_DIR_PATH"
-
-	util_error_echo "cd $THE_HERBSTLUFTWMRC_PROFILE_DIR_PATH"
-	cd "$THE_HERBSTLUFTWMRC_PROFILE_DIR_PATH" ## cd ~/.local/share/herbstluftwmrc-profile
-
-
-	util_error_echo "git clone --recursive $repo_url $name"
-	git clone --recursive "$repo_url" "$name" ## git clone https://github.com/conformal/herbstluftwm.git demo
-
-	cd "$OLDPWD"
+	util_error_echo
+	herbstluftwmrc_repo_clone "$name" "$repo_url"
+	util_error_echo
 
 }
 
@@ -985,7 +977,7 @@ Example:
 
 		$ $cmd_name set demo
 
-		$ $cmd_name install demo https://github.com/conformal/herbstluftwm.git
+		$ $cmd_name install demo https://github.com/samwhelp/note-about-herbstluftwm.git
 
 		$ $cmd_name remove demo
 
