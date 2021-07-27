@@ -25,32 +25,39 @@ THE_CMD_FILE_NAME="$(basename "$0")"
 
 
 ################################################################################
-### Head: Util_Debug
+### Head: Util / Debug
 ##
 
 util_debug_echo () {
 	if is_debug; then
-		echo "$@" 1>&2;
+		echo "$@" 1>&2
 	fi
 }
 
+util_error_echo () {
+	echo "$@" 1>&2
+}
+
 ##
-### Head: Util_Debug
+### Head: Util / Debug
 ################################################################################
 
 
 ################################################################################
 ### Head: Base
 ##
+
+## THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "$0")" ; pwd)"
+
 find_dir_path () {
-	if [ ! -d $(dirname -- "$1") ]; then
+	if ! [ -d "$(dirname -- "$1")" ]; then
 		dirname -- "$1"
 		return 1
 	fi
-	echo $(cd -P -- "$(dirname -- "$1")" && pwd -P)
+	echo "$(cd -- "$(dirname -- "$1")" ; pwd)"
 }
 
-##THIS_BASE_DIR_PATH=$(find_dir_path $0)
+## THIS_BASE_DIR_PATH="$(find_dir_path "$0")"
 
 ## $ export DEBUG_HERBSTLUFTWMRC_CTRL_INSTALL=true
 is_debug () {
@@ -138,9 +145,8 @@ base_var_dump
 ################################################################################
 
 
-
 ################################################################################
-### Head: Util_Install
+### Head: Util / Install
 ##
 
 util_make_bin_dir () {
@@ -155,6 +161,8 @@ util_make_tmp_dir () {
 util_target_download_to_tmp_dir () {
 
 	local tmp_file_path="${THE_TMP_DIR_PATH}/${THE_TARGET_FILE_NAME}"
+
+	util_debug_echo "wget -c $THE_TARGET_DOWNLOAD_URL -O $tmp_file_path"
 	wget -c "$THE_TARGET_DOWNLOAD_URL" -O "$tmp_file_path"
 
 }
@@ -163,7 +171,7 @@ util_target_install_from_tmp_dir () {
 
 	local tmp_file_path="${THE_TMP_DIR_PATH}/${THE_TARGET_FILE_NAME}"
 
-	echo "install -Dm755 $tmp_file_path $THE_TARGET_FILE_PATH"
+	util_debug_echo "install -Dm755 $tmp_file_path $THE_TARGET_FILE_PATH"
 	install -Dm755 "$tmp_file_path" "$THE_TARGET_FILE_PATH"
 
 }
@@ -174,14 +182,13 @@ util_check_target_exists () {
 		return 0
 	fi
 
+	util_debug_echo
+	util_debug_echo "## File is exists:" "$THE_TARGET_FILE_PATH"
+	util_debug_echo
+	util_debug_echo "## Try to backup:"
+	util_debug_echo
 
-	echo "File is exists:" "$THE_TARGET_FILE_PATH"
-	echo
-
-	echo "Try to backup:"
-	echo
-
-	local now=$(date +%Y%m%d_%s)
+	local now="$(date +%Y%m%d_%s)"
 	local bak_dir_path="${HOME}/.backup/${THE_TARGET_FILE_NAME}.bak"
 	local bak_file_path="${bak_dir_path}/${THE_TARGET_FILE_NAME}.bak.$now"
 
@@ -190,19 +197,19 @@ util_check_target_exists () {
 	mv -v "$THE_TARGET_FILE_PATH" "${bak_file_path}"
 
 	if [ "$?" != "0" ]; then
-		echo
-		echo 'Backup Failure!'
+		util_debug_echo
+		util_debug_echo '## Backup Failure!'
 		exit 1
 	fi
 
-	echo
+	util_debug_echo
 
 	return 0
 }
 
 util_target_print_version () {
-	echo
-	echo "Current Version:"
+	util_debug_echo
+	util_debug_echo "Current Version:"
 
 	"$THE_TARGET_FILE_PATH" version
 }
@@ -223,7 +230,7 @@ util_target_download_and_install () {
 
 
 ##
-### Tail: Util_Install
+### Tail: Util / Install
 ################################################################################
 
 
