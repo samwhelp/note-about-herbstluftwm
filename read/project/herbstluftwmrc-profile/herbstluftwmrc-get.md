@@ -1,6 +1,6 @@
 ---
 title: herbstluftwmrc-get
-nav_order: 8010
+nav_order: 8011
 has_children: false
 parent: herbstluftwmrc-profile
 grand_parent: 專案
