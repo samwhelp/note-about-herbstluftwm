@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=XSession
+Exec=/usr/local/bin/herbstluftwm-session.sh
+TryExec=/usr/local/bin/herbstluftwm-session.sh
+Name=Be Herbstluftwm
+Comment=Herbstluftwm Xsession
+
+Name[zh_TW]=Be Herbstluftwm
+Comment[zh_TW]=Herbstluftwm Xsession
