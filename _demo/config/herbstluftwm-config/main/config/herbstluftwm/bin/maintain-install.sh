@@ -85,6 +85,13 @@ mod_install_bin_ctrl () {
 	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-profile-ctrl $HOME/.config/herbstluftwm/bin/hlwm-profile-ctrl"
 	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-profile-ctrl" "$HOME/.config/herbstluftwm/bin/hlwm-profile-ctrl"
 
+	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-system-ctrl $HOME/.config/herbstluftwm/bin/hlwm-system-ctrl"
+	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-system-ctrl" "$HOME/.config/herbstluftwm/bin/hlwm-system-ctrl"
+
+	echo "install -Dm755 $THE_BIN_DIR_PATH/hlwm-focus-ctrl $HOME/.config/herbstluftwm/bin/hlwm-focus-ctrl"
+	install -Dm755 "$THE_BIN_DIR_PATH/hlwm-focus-ctrl" "$HOME/.config/herbstluftwm/bin/hlwm-focus-ctrl"
+
+
 }
 
 mod_install_ext () {
@@ -97,6 +104,9 @@ mod_install_ext () {
 
 	echo "install -Dm644 $THE_EXT_DIR_PATH/util.sh $HOME/.config/herbstluftwm/ext/util.sh"
 	install -Dm644 "$THE_EXT_DIR_PATH/util.sh" "$HOME/.config/herbstluftwm/ext/util.sh"
+
+	echo "install -Dm644 $THE_EXT_DIR_PATH/wallpaper.sh $HOME/.config/herbstluftwm/ext/wallpaper.sh"
+	install -Dm644 "$THE_EXT_DIR_PATH/wallpaper.sh" "$HOME/.config/herbstluftwm/ext/wallpaper.sh"
 
 	echo "install -Dm644 $THE_EXT_DIR_PATH/hlwm.sh $HOME/.config/herbstluftwm/ext/hlwm.sh"
 	install -Dm644 "$THE_EXT_DIR_PATH/hlwm.sh" "$HOME/.config/herbstluftwm/ext/hlwm.sh"
@@ -237,11 +247,32 @@ mod_install_style_dir () {
 
 mod_install_share_style_profile_main () {
 
+
 	echo "install -Dm644 $THE_SHARE_DIR_PATH/style-profile/main/picom/picom.conf $HOME/.config/herbstluftwm/share/style-profile/main/picom/picom.conf"
 	install -Dm644 "$THE_SHARE_DIR_PATH/style-profile/main/picom/picom.conf" "$HOME/.config/herbstluftwm/share/style-profile/main/picom/picom.conf"
 
 	echo "install -Dm644 $THE_SHARE_DIR_PATH/style-profile/main/xsettingsd/xsettingsd.conf $HOME/.config/herbstluftwm/share/style-profile/main/xsettingsd/xsettingsd.conf"
 	install -Dm644 "$THE_SHARE_DIR_PATH/style-profile/main/xsettingsd/xsettingsd.conf" "$HOME/.config/herbstluftwm/share/style-profile/main/xsettingsd/xsettingsd.conf"
+
+
+
+
+
+	#echo "install -Dm644 $THE_SHARE_DIR_PATH/style-profile/main/tint2/tint2rc $HOME/.config/herbstluftwm/share/style-profile/main/tint2/tint2rc"
+	#install -Dm644 "$THE_SHARE_DIR_PATH/style-profile/main/tint2/tint2rc" "$HOME/.config/herbstluftwm/share/style-profile/main/tint2/tint2rc"
+
+	echo "install -Dm644 $THE_SHARE_DIR_PATH/style-profile/main/tint2/top_panel/tint2rc $HOME/.config/herbstluftwm/share/style-profile/main/tint2/top_panel/tint2rc"
+	install -Dm644 "$THE_SHARE_DIR_PATH/style-profile/main/tint2/top_panel/tint2rc" "$HOME/.config/herbstluftwm/share/style-profile/main/tint2/top_panel/tint2rc"
+
+	echo "install -Dm644 $THE_SHARE_DIR_PATH/style-profile/main/tint2/bottom_panel/tint2rc $HOME/.config/herbstluftwm/share/style-profile/main/tint2/bottom_panel/tint2rc"
+	install -Dm644 "$THE_SHARE_DIR_PATH/style-profile/main/tint2/bottom_panel/tint2rc" "$HOME/.config/herbstluftwm/share/style-profile/main/tint2/bottom_panel/tint2rc"
+
+	echo "install -Dm644 $THE_SHARE_DIR_PATH/style-profile/main/tint2/top_bottom_panel/tint2rc_top $HOME/.config/herbstluftwm/share/style-profile/main/tint2/top_bottom_panel/tint2rc_top"
+	install -Dm644 "$THE_SHARE_DIR_PATH/style-profile/main/tint2/top_bottom_panel/tint2rc_top" "$HOME/.config/herbstluftwm/share/style-profile/main/tint2/top_bottom_panel/tint2rc_top"
+
+	echo "install -Dm644 $THE_SHARE_DIR_PATH/style-profile/main/tint2/top_bottom_panel/tint2rc_bottom $HOME/.config/herbstluftwm/share/style-profile/main/tint2/top_bottom_panel/tint2rc_bottom"
+	install -Dm644 "$THE_SHARE_DIR_PATH/style-profile/main/tint2/top_bottom_panel/tint2rc_bottom" "$HOME/.config/herbstluftwm/share/style-profile/main/tint2/top_bottom_panel/tint2rc_bottom"
+
 
 
 }

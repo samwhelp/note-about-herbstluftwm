@@ -25,7 +25,7 @@ cmd_var_init () {
 	THE_CMD_DIR_PATH="$THE_BIN_DIR_PATH"
 
 	if [ "none$THE_CMD_FILE_NAME" = 'none' ]; then
-		THE_CMD_FILE_NAME="hlwm-frame-ctrl"
+		THE_CMD_FILE_NAME="hlwm-system-ctrl"
 	fi
 
 	THE_CMD_FILE_PATH="$THE_CMD_DIR_PATH/$THE_CMD_FILE_NAME"
@@ -38,93 +38,58 @@ cmd_var_init () {
 
 
 ################################################################################
-### Head: Util / Frame
+### Head: Model / system
 ##
 
-util_frame_init_remember_display_file () {
-	mkdir -p "$THE_SYS_CACHE_DIR_PATH/frame"
-	touch "$THE_SYS_CACHE_DIR_PATH/frame/display.conf"
-}
+mod_system_shutdown () {
 
-util_frame_set_display_mode () {
-	util_frame_init_remember_display_file
-	echo "$1" > "$THE_SYS_CACHE_DIR_PATH/frame/display.conf"
-}
-
-util_frame_get_display_mode () {
-	util_frame_init_remember_display_file
-	cat "$THE_SYS_CACHE_DIR_PATH/frame/display.conf"
-}
-
-##
-### Tail: Util / Frame
-################################################################################
-
-
-################################################################################
-### Head: Model / Frame
-##
-
-mod_frame_show () {
-	#echo "mod_frame_show"
-	#echo "$@"
-
-	hc set frame_border_width 1
-	hc set frame_transparent_width 5
-
-	util_frame_set_display_mode 'show'
-}
-
-mod_frame_hide () {
-	#echo "mod_frame_hide"
-	#echo "$@"
-
-	hc set frame_border_width 0
-	hc set frame_transparent_width 0
-
-	util_frame_set_display_mode 'hide'
-}
-
-mod_frame_toggle () {
-	#echo "mod_frame_toggle"
-	#echo "$@"
-
-	local mode="$(util_frame_get_display_mode)"
-
-	if [ "is_$mode" = "is_show" ]; then
-		mod_frame_hide
-		return
+	if ! is_command_exist 'shutdown'; then
+		return 0
 	fi
 
-	mod_frame_show
+	shutdown now
+}
+
+mod_system_reboot () {
+
+	if ! is_command_exist 'systemctl'; then
+		return 0
+	fi
+
+	systemctl reboot
+}
+
+
+mod_system_logout () {
+
+	killall -9 herbstluftwm
+
 }
 
 
 ##
-### Tail: Model / Frame
+### Tail: Model / system
 ################################################################################
 
 
 ################################################################################
-### Head: SubCmd / Frame
+### Head: SubCmd / system
 ##
 
-
-sub_run_show () {
-	mod_frame_show "$@"
+sub_run_shutdown () {
+	mod_system_shutdown "$@"
 }
 
-sub_run_hide () {
-	mod_frame_hide "$@"
+sub_run_reboot () {
+	mod_system_reboot "$@"
 }
 
-sub_run_toggle () {
-	mod_frame_toggle "$@"
+sub_run_logout () {
+	mod_system_logout "$@"
 }
-
 
 ##
-### Tail: SubCmd / Frame
+### Tail: SubCmd / system
 ################################################################################
 
 
@@ -173,7 +138,7 @@ sub_cmd_find_function_name () {
 
 main_usage () {
 	##local cmd_name="$0"
-	local cmd_name="hlwm-frame-ctrl"
+	local cmd_name="hlwm-system-ctrl"
 
 cat << EOF
 Usage:
@@ -184,10 +149,10 @@ Example:
 	$ $cmd_name
 	$ $cmd_name help
 
-	$ $cmd_name show
-	$ $cmd_name hide
+	$ $cmd_name shutdowm
+	$ $cmd_name reboot
+	$ $cmd_name logout
 
-	$ $cmd_name toggle
 
 Debug:
 	$ export DEBUG_HLWM=true
