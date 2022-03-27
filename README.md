@@ -4,11 +4,6 @@
 * [note-about-herbstluftwm](https://samwhelp.github.io/note-about-herbstluftwm/) ([GitHub](https://github.com/samwhelp/note-about-herbstluftwm))
 
 
-## samwhelp
-
-* [個人筆記](https://samwhelp.github.io/book/)
-
-
 ## 主題
 
 * [入門](#入門)
@@ -18,6 +13,7 @@
 * [使用情境](#使用情境)
 * [專案](#專案)
 * [輔助工具](#輔助工具)
+* [相關筆記](#相關筆記)
 
 
 ### 入門
@@ -78,3 +74,16 @@
 
 
 另外我「[客製的設定](https://samwhelp.github.io/note-about-herbstluftwm/read/config/main.html)」，也有其他的[輔助工具](https://samwhelp.github.io/note-about-herbstluftwm/read/config/main/tool.html)可供使用。
+
+
+## 相關筆記
+
+* [ubuntu 探索筆記](https://samwhelp.github.io/note-about-ubuntu/)
+* [manjaro 探索筆記](https://samwhelp.github.io/note-about-manjaro/)
+* [archcraft 探索筆記](https://samwhelp.github.io/note-about-archcraft/) / [archcraft-adjustment-package](https://github.com/samwhelp/archcraft-adjustment-package/) / [openbox-with-tint](https://github.com/samwhelp/archcraft-adjustment-package/tree/main/core/wm/openbox/archcraft-modeling-openbox-with-tint/asset/etc/skel/.local/share/openboxrc-profile/openbox-with-tint)
+* [xsession 簡易入門](https://samwhelp.github.io/note-about-xsession/)
+* [System Modeling](https://samwhelp.github.io/system-modeling/)
+
+## samwhelp
+
+* [個人筆記](https://samwhelp.github.io/book/)
